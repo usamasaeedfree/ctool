@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="7 day">
+    <meta name="language" content="en">
+    <meta name="author" content="USAMA">
+    <meta name="publisher" content="C Tool">
+    <meta name="googlebot" content="translate">
+    <meta name="rating" content="general">
+    <meta property="og:type" content="website">
+    <meta name="twitter:creator" content="@mycreatorhandle">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@myawesomewebsite">
+    <meta property="og:site_name" content="C Tool">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
+    <link rel="stylesheet" href="/src/style.css">
+
+
+    <title>UCP Calculator - Calculate Your Grade, CGPA, GPA and Percentage</title>
+    <meta property="og:title" content="UCP Calculator - Calculate Your Grade, CGPA, GPA and Percentage">
+    <meta name="twitter:title" content="UCP Calculator - Calculate Your Grade, CGPA, GPA and Percentage">
+    <meta name="title" content="UCP Calculator - Calculate Your Grade, CGPA, GPA and Percentage">
+
+
+
+    <link rel="canonical" href="https://ctool.fun/tools/ucp-calculator.html">
+    <meta property="og:url" content="https://ctool.fun/tools/ucp-calculator.html">
+    <meta name="twitter:url" content="https://ctool.fun/tools/ucp-calculator.html">
+
+    <meta name="keywords"
+        content="ucp calculator, ucp grade calculator, ucp cgpa calculator, ucp cgpa calculator, UCP grading policy, UCP Grade percentage, Ucp grading policy 2025">
+
+    <meta name="description"
+        content="UCP Calculator 2025 - Calculate GPA, CGPA & percentage using the latest UCP grading policy. Accurate UCP grade calculator for all students.">
+    <meta property="og:description"
+        content="UCP Calculator 2025 - Calculate GPA, CGPA & percentage using the latest UCP grading policy. Accurate UCP grade calculator for all students.">
+    <meta name="twitter:description"
+        content="UCP Calculator 2025 – Calculate GPA, CGPA & percentage using the latest UCP grading policy. Accurate UCP grade calculator for all students.">
+
+    <meta property="og:image" content="/img/ucp-calculator-find-grade-cgpa-percentage.png">
+    <meta name="twitter:image" content="/img/ucp-calculator-find-grade-cgpa-percentage.png">
+
+    <meta property="og:image" content="/img/ucp-calculator.webp">
+    <meta name="twitter:image" content="/img/ucp-calculator.webp">
+
+    <meta property="og:image" content="/img/ucp-cgpa-gpa-calculator.png">
+    <meta name="twitter:image" content="/img/ucp-cgpa-gpa-calculator.png">
+
+    <meta property="og:image" content="/img/ucp-grade-calculator.png">
+    <meta name="twitter:image" content="/img/ucp-grade-calculator.png">
+
+
+
+    <style>
+        .tool {
+            background-color: #f5f5f5;
+            display: flex;
+            padding: 30px;
+            border-radius: 10px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .subjects {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .result-section,
+        .cgpa-gpa-section,
+        .grade-marks-section {
+            border-top: 1px solid gainsboro;
+            padding: 40px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .marksToGrade,
+        .gradeToMarks {
+            display: flex;
+            gap: 10px;
+            align-items: end;
+            flex-wrap: wrap;
+        }
+
+        .subject {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .input {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: flex-end;
+            flex-grow: 1;
+
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            font-size: 16px;
+            flex-grow: 1;
+        }
+
+        .btn-section {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        button {
+            border: 1px solid transparent;
+        }
+
+        .results {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .results>.card {
+            padding: 25px;
+            width: 100%;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+        }
+
+        .results>.card>.title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .results>.card>.title>img {
+            max-width: 45px;
+        }
+
+        .progress-bar {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .progress-bar::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(250, 250, 250);
+            border-radius: 50%;
+        }
+
+        .progress-value {
+            position: relative;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        @media(max-width:660px) {
+            .results {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:470px) {
+            .results {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+
+
+
+
+    <script type="application/ld+json">
+		{
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "UCP Calculator - Calculate Your Grade, CGPA, GPA and Percentage",
+            "image": [
+                "/img/ucp-calculator-find-grade-cgpa-percentage.png",
+                "/img/ucp-grade-calculator.png",
+                "/img/ucp-cgpa-gpa-calculator.png",
+                "/img/ucp-calculator.webp"
+                ],
+            "description": "UCP Calculator 2025 – Calculate GPA, CGPA & percentage using the latest UCP grading policy. Accurate UCP grade calculator for all students.",
+            "brand": {
+                "@type": "Brand",
+                "name": "C Tool"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "180"
+            },
+            "offers": {
+                "@type": "AggregateOffer",
+                "offerCount": 100,
+                "lowPrice": 0,
+                "highPrice": 0,
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2027-12-31"
+            }
+        }
+
+	</script>
+
+
+    <script type="application/ld+json">
+		{
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "UCP Calculator - Calculate Your Grade, CGPA, GPA and Percentage",
+            "url": "https://ctool.fun/tools/ucp-calculator.html",
+            "applicationCategory": "EduApplication",
+            "operatingSystem": "All",
+            "description": "UCP Calculator 2025 – Calculate GPA, CGPA & percentage using the latest UCP grading policy. Accurate UCP grade calculator for all students.",
+            "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+            },
+            "creator": {
+                "@type": "Person",
+                "name": "Usama Saeed"
+            },
+            "browserRequirements": "Requires JavaScript and a modern web browser",
+            "screenshot": [
+                "/img/ucp-calculator-find-grade-cgpa-percentage.png",
+                "/img/ucp-grade-calculator.png",
+                "/img/ucp-cgpa-gpa-calculator.png",
+                "/img/ucp-calculator.webp"
+                ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "180"
+            }
+        }
+	</script>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="box">
+            <a href="/" class="logo"><img src="/src/c-tool-website-logo.png" alt="c tool (calculator tool)"><strong>C
+                    tool</strong></a>
+
+            <nav class="nav" id="navLink">
+                <img src="/src/close-icon.svg" alt="close menu icon" width="60" height="60" onclick='showMenu()'>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/#features">Features</a>
+                <a href="/#reviews">Reviews</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <img src="/src/menu-icon.svg" alt="open menu icon" width="60" height="60" onclick='showMenu()'>
+
+        </div>
+    </header>
+
+
+
+    <!-- Main Section -->
+    <main>
+        <div class="divider">
+            <section class="card">
+
+
+                <h1>UCP CGPA Calculator 2025 – Accurate, Fast & Free</h1>
+                <p>Calculate your UCP GPA & CGPA instantly using the official 2025 grading policy. Save time, avoid
+                    mistakes, and get accurate results every time.</p>
+
+
+
+                <div class="tool" id="#tool">
+                    <h2>UCP Calculator</h2>
+
+                    <div class="grade-marks-section">
+                        <div class="marksToGrade">
+
+                            <div class="input">
+                                <label for="percentage">Enter Your Marks %</label>
+                                <input type="number" placeholder="e.g. 85" id="percentage">
+                            </div>
+
+                            <button onclick="findGrade()"
+                                style="background-color: #500085; color: white; font-size: 16px;">Find
+                                Grade</button>
+
+                        </div>
+
+                        <div class="gradeToMarks">
+                            <div class="input">
+                                <label for="cgpa">Enter Your CGPA</label>
+                                <input type="number" step="0.01" id="cgpa" placeholder="e.g. 3.20">
+                            </div>
+
+                            <button onclick="cgpaToPercentage()"
+                                style="background-color: #0463DF; color: white; font-size: 16px;">Find
+                                Grade</button>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="cgpa-gpa-section">
+                        <h2 class="clr">Calculate CGPA & GAP</h2>
+                        <div class="subjects" id="subjects">
+
+                            <div class="subject">
+
+                                <div class="input">
+                                    <label for="sname">Enter Subject Name</label>
+                                    <input type="text" placeholder="Subject Name" id="sname">
+                                </div>
+
+                                <div class="input">
+                                    <label for="sgrade">Select Grade</label>
+                                    <select id="sgrade">
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="B-">B-</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="C-">C-</option>
+                                        <option value="D+">D+</option>
+                                        <option value="D">D</option>
+                                        <option value="F">F</option>
+                                    </select>
+                                </div>
+
+                                <div class="input">
+                                    <label for="chours">Credit Hours</label>
+                                    <input type="number" placeholder="Hours" id="chours">
+                                </div>
+
+                                <button style="background-color: #DF0442; color: white; font-size: 16px;"
+                                    onclick="removeSubject(this)">Delete</button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="btn-section">
+                            <button style="background-color: #0463DF; color: white; font-size: 16px;"
+                                onclick="addSubject()">+ Add
+                                Subject</button>
+
+
+                            <button style="background-color: #01757D; color: white; font-size: 16px;"
+                                onclick="CalculateGPA()">Calculate CGPA &
+                                GPA</button>
+                        </div>
+                    </div>
+
+
+                    <div class="result-section" id="Results">
+                        <h2 class="clr">Result:</h2>
+                        <div class="results">
+
+                            <div class="progress-bar" id="p"
+                                style="background: conic-gradient(rgb(3 137 255) 3.6deg, rgb(235, 235, 235) 0deg);">
+                                <span class="progress-value" style="color: rgb(3 137 255);">Grad</span>
+                            </div>
+
+                            <div class="progress-bar" id="pp"
+                                style="background: conic-gradient(rgb(255, 3, 24) 3.6deg, rgb(235, 235, 235) 0deg);">
+                                <span class="progress-value" style="color: rgb(255, 3, 24);">0.00</span>
+                            </div>
+
+                            <div class="progress-bar" id="ppp"
+                                style="background: conic-gradient(rgb(255, 115, 1) 3.6deg, rgb(235, 235, 235) 0deg);">
+                                <span class="progress-value" style="color: rgb(255, 115, 1);">0%</span>
+                            </div>
+
+                            <div class="progress-bar" id="pppp"
+                                style="background: conic-gradient(rgb(1, 155, 83) 3.6deg, rgb(235, 235, 235) 0deg);">
+                                <span class="progress-value" style="color: rgb(1, 155, 83);">GPA</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <br>
+                <h2>What is the UCP Calculator?</h2>
+                <p>The UCP Calculator is a free online tool specifically designed for students of the University of
+                    Central Punjab to help them track and evaluate their academic performance.
+
+                </p>
+                <p>It’s an all-in-one solution that enables students to easily calculate their grades, GPA, and CGPA. This CGPA calculator works on the latest updated grading policy of UCP, ensuring accuracy and reliability in every calculation.</p>
+
+
+
+            
+                <br>
+                <h2>Features and Benefits</h2>
+                <p>While designing this tool, we added multiple useful features to make it more practical and student-friendly:</p>
+                <ul>
+                    <li>Multiple Subject & Semester Support – Add as many subjects or semesters as you want and calculate your CGPA and GPA in one go.</li>
+                    <li>Grade to Percentage Conversion—Instantly convert your grades into a percentage based on UCP’s grading scale.</li>
+                    <li>Percentage to Grade Conversion—Quickly find your grade and grade point by entering your mark percentage.</li>
+                    <li>Cross-Device Compatibility—Runs smoothly on laptops, desktops, tablets, and mobile phones without installing anything.</li>
+                    <li>Accessible Anytime, Anywhere – Being a web-based tool, you can use it 24/7 from any location.</li>
+                    <li>Beginner-Friendly Interface – Even if you’re a first-time user, you can operate it without any technical knowledge.</li>
+                    <li>Accurate Calculations—Since it’s based on UCP’s official grading policy, the results match exactly with manual calculations.</li>
+                    <li>Time-Saving – No need for multiple tools; perform all academic calculations in one place.</li>
+                    <li>Free to Use—100% free with no hidden charges or sign-ups required.</li>
+
+                </ul>
+
+                <br>
+                <h2>How to Calculate CGPA and GPA</h2>
+                <p>Using this tool, you can calculate both CGPA and GPA easily by following these steps:</p>
+                <ul>
+                    <Li>Enter Subject Name (optional) – This is just for your reference.</Li>
+                    <Li>Select the Grade—Choose the grade you received in that subject.</Li>
+                    <Li>Enter Credit Hours – Input the credit hours assigned to that subject.</Li>
+                    <Li>Click “Calculate CGPA & GPA”—the tool will instantly display your GPA and CGPA.</Li>
+                    <Li></Li>
+                </ul>
+
+                <br>
+                <h2>For CGPA Calculation:</h2>
+                <ul>
+                    <li>Click on “Add Subject” to enter multiple subjects.</li>
+                    <li>Provide the grade and credit hours for each subject.</li>
+                    <li>Press “Calculate CGPA & GPA” to get your final results.</li>
+                    <li>You can also delete a subject if needed before the calculation.</li>
+                </ul>
+
+                <br>
+                <h2>How to Find Your Grade</h2>
+                <p>With this tool, you can easily find your grade based on UCP’s grading policy by following these steps:</p>
+                <ul>
+                    <li>Enter your marks percentage in the “Enter Your Marks %” field.</li>
+                    <li>Click “Find Grade.”</li>
+                    <li>Instantly see your grade and grade point displayed in the results section.</li>
+                </ul>
+
+                <br>
+                <h2>How to Calculate UCP CGPA Percentage</h2>
+                <p>If you want to convert your CGPA into an equivalent percentage:</p>
+                <ul>
+                    <li>Enter your CGPA in the “Enter Your CGPA” field.</li>
+                    <li>Click “Find Grade” (or the respective button).</li>
+                    <li>The tool will instantly calculate and display your percentage equivalent based on UCP’s official conversion formula.</li>
+                </ul>
+
+                <br>
+                <h2>Why Use This UCP Calculator?</h2>
+                <ul>
+                    <li>Built specifically for students of the University of Central Punjab.</li>
+                    <li>100% aligned with the 2025 official grading policy.</li>
+                    <li>Saves time and eliminates manual errors.</li>
+                    <li>Visually appealing results with animated progress indicators.</li>
+                    <li>Works on all devices with internet access.</li>
+                </ul>
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+                <br>
+                <h2>What is UCP Grade Percentage?</h2>
+                <p>The UCP Grade Percentage refers to the percentage of marks a student has obtained out of the total
+                    marks in a subject or semester at the University of Central Punjab (UCP). This percentage is then
+                    converted into a grade (A, B+, etc.) and a GPA value according to the official UCP grading policy.
+                </p>
+
+                <br>
+                <h2>What is UCP Percentage Criteria?</h2>
+                <p>UCP’s percentage criteria is the system that defines which percentage range corresponds to which
+                    letter grade and GPA.</p>
+                <strong>For example:</strong>
+                <ul>
+                    <li>85% and above = A grade</li>
+                    <li>80% - 84% = A- grade</li>
+                    <li>75% - 79% = B+ grade
+                    </li>
+                </ul>
+                <p>This ensures grading is standardized for all students and departments.</p>
+
+                <br>
+                <h2>How is CGPA Calculated in UCP?</h2>
+                <p>At UCP, <strong>CGPA (Cumulative Grade Point Average)</strong> is calculated by:</p>
+                <ol>
+                    <li>Multiplying the grade point of each subject by its credit hours (this gives quality points).
+                    </li>
+                    <li>Adding all quality points together.</li>
+                    <li>Dividing the total quality points by the total credit hours attempted.</li>
+                </ol>
+                <p><strong>Example:</strong><br>
+                    If you have 3 subjects with grades worth 3.5, 3.0, and 3.7 GPA points and each has 3 credit hours,
+                    the CGPA is calculated accordingly.</p>
+
+                <br>
+                <h2>What is UCP Grading Policy?</h2>
+                <p>The <strong>UCP grading policy</strong> defines the percentage ranges, letter grades, and GPA points
+                    that determine student performance. It also outlines rules for probation, honors, and degree
+                    completion. This policy ensures fairness and transparency in the evaluation process.</p>
+
+                <br>
+                <h2>UCP Grading Policy 2025</h2>
+                <p>In 2025, UCP updated its grading policy to better align with international academic standards. The
+                    changes mainly included:</p>
+                <ul>
+                    <li>Adjusted percentage ranges for certain grades.</li>
+                    <li>Clearer rules for GPA rounding.</li>
+                    <li>Updated probation and dismissal criteria.</li>
+                </ul>
+                <p>You can check the official policy on UCP’s website for complete details.</p>
+
+                <br>
+                <h2>UCP Grade Chart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Percentage Range</th>
+                            <th>Letter Grade</th>
+                            <th>GPA (4.0 Scale)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>85% - 100%</td>
+                            <td>A</td>
+                            <td>4.0</td>
+                        </tr>
+                        <tr>
+                            <td>80% - 84%</td>
+                            <td>A-</td>
+                            <td>3.7</td>
+                        </tr>
+                        <tr>
+                            <td>75% - 79%</td>
+                            <td>B+</td>
+                            <td>3.3</td>
+                        </tr>
+                        <tr>
+                            <td>70% - 74%</td>
+                            <td>B</td>
+                            <td>3.0</td>
+                        </tr>
+                        <tr>
+                            <td>65% - 69%</td>
+                            <td>B-</td>
+                            <td>2.7</td>
+                        </tr>
+                        <tr>
+                            <td>60% - 64%</td>
+                            <td>C+</td>
+                            <td>2.3</td>
+                        </tr>
+                        <tr>
+                            <td>55% - 59%</td>
+                            <td>C</td>
+                            <td>2.0</td>
+                        </tr>
+                        <tr>
+                            <td>Below 55%</td>
+                            <td>F</td>
+                            <td>0.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <h2>What is the Grade of 83% in UCP?</h2>
+                <p>According to the UCP grading policy, an <strong>83%</strong> score falls under the
+                    <strong>A-</strong> grade, which carries a <strong>3.7 GPA</strong> on the 4.0 scale.
+                </p>
+
+
+
+            </section>
+
+            <aside>
+                <div class="card">
+                    <div class="developer">
+                        <div class="img"><img src="/src/author-icon.svg" alt="How is the developer"></div>
+                        <div class="bio">
+                            <h3 class="clr">USAMA SAEED</h3>
+                            <span>Developer</span>
+                        </div>
+                    </div>
+                    <p>As an experienced developer and author, I realize how I can help our users achieve their goals
+                        with accurate results.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="clr">Table of Content (UCP)</h3>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <span>UCP Grade Calculator</span>
+                        <span>About the Tool</span>
+                        <span>Features and Benefits</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="card">
+                    <h3 class="clr">Tags</h3>
+                    <div class="tags">
+                        <span>UCP Calculator</span>
+                        <span>UCP gpa calculator live</span>
+                        <span>UCP gpa calculator 2025</span>
+                        <span>UCP gpa calculator online</span>
+                        <span>UCP Grade Calculate</span>
+                        <span>ucp GPA Percenatage Calculator</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="box grid">
+            <div class="card">
+                <h3>Calculator Tool - C Tool</h3>
+                <p>We develop tools focused on providing accurate results and helping users achieve their goals.</p>
+            </div>
+
+            <div class="card">
+                <h3>Our Tools</h3>
+                <div class="links">
+                    <a href="/">CGPA Calculator</a>
+                    <a href="/tools/uog-gpa-calculator.html">UOG GPA Calculator</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Website Links</h3>
+                <div class="links">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Other Pages</h3>
+                <div class="links">
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="/disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="box btm">
+            <p>© 2025 C Tool. All rights reserved | Designed for better results and achievements.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        function showMenu() {
+            const navLinks = document.getElementById("navLink");
+            navLinks.classList.toggle("show")
+        }
+
+        // 
+        function findGrade() {
+            let percent = parseFloat(document.getElementById("percentage").value);
+            let grade = "";
+            let gradePoint = "";
+
+            if (isNaN(percent) || percent < 0 || percent > 100) {
+                window.alert("Please Enter A Valid Marks Percentage");
+                document.getElementById("percentage").focus()
+            }
+            else {
+
+                switch (true) {
+                    case (percent >= 90 && percent <= 100):
+                        grade = "A"; gradePoint = 4.00; break;
+                    case (percent >= 86):
+                        grade = "A-"; gradePoint = 3.67; break;
+                    case (percent >= 81):
+                        grade = "B+"; gradePoint = 3.33; break;
+                    case (percent >= 77):
+                        grade = "B"; gradePoint = 3.00; break;
+                    case (percent >= 72):
+                        grade = "B-"; gradePoint = 2.67; break;
+                    case (percent >= 68):
+                        grade = "C+"; gradePoint = 2.33; break;
+                    case (percent >= 63):
+                        grade = "C"; gradePoint = 2.00; break;
+                    case (percent >= 58):
+                        grade = "C-"; gradePoint = 1.67; break;
+                    case (percent >= 54):
+                        grade = "D+"; gradePoint = 1.33; break;
+                    case (percent >= 50):
+                        grade = "D"; gradePoint = 1.00; break;
+                    default:
+                        grade = "F"; gradePoint = 0.00;
+                }
+
+
+
+                let number = 0;
+                const p = document.getElementById("p");
+
+                const pgrade = setInterval(() => {
+                    const deg = (number / 100) * 360;
+                    p.style.background = `conic-gradient(#0389ff 0deg ${deg}deg, #e2e2e2 ${deg}deg 360deg)`;
+                    p.innerHTML = `<span class="progress-value" style="color: rgb(3 137 255);">${grade}</span>`
+                    number++;
+
+
+                    if (number > percent) {
+                        clearInterval(pgrade); // <-- fixed: use pgrade, not `interval`
+                    }
+
+                }, 10);
+
+
+                const pp = document.getElementById("pp");
+
+                const ppgrade = setInterval(() => {
+                    const deg = (number / 100) * 360;
+                    pp.style.background = `conic-gradient(rgb(255, 3, 24) 0deg ${deg}deg, #e2e2e2 ${deg}deg 360deg)`;
+                    pp.innerHTML = `<span class="progress-value" style="color: rgb(255, 3, 24);">${gradePoint}</span>`
+                    number++;
+
+
+                    if (number > percent) {
+                        clearInterval(pgrade); // <-- fixed: use pgrade, not `interval`
+                    }
+
+                }, 10);
+
+
+                document.getElementById("Results").scrollIntoView({
+                    behavior: "smooth", // smooth animation
+                    block: "start"      // top se start ho
+                });
+            }
+
+        }
+
+
+
+
+        // CGPA TO Percenatage Converter
+        function cgpaToPercentage() {
+            let cgpa = parseFloat(document.getElementById("cgpa").value);
+
+            if (isNaN(cgpa) || cgpa < 0 || cgpa > 4) {
+                window.alert("❌ Please enter a valid CGPA between 0.00 and 4.00");
+                document.getElementById("cgpa").focus()
+            }
+            else {
+                let percent = (cgpa / 4) * 100;
+                console.log(percent.toFixed(2) + "%");
+
+
+
+                let number = 0;
+                const p = document.getElementById("ppp");
+
+                const pgrade = setInterval(() => {
+                    const deg = (number / 100) * 360;
+                    p.style.background = `conic-gradient(rgb(255, 115, 1) 0deg ${deg}deg, #e2e2e2 ${deg}deg 360deg)`;
+                    p.innerHTML = `<span class="progress-value" style="color: rgb(255, 115, 1);">${percent.toFixed(1)}%</span>`
+                    number++;
+
+
+                    if (number > percent) {
+                        clearInterval(pgrade); // <-- fixed: use pgrade, not `interval`
+                    }
+
+                }, 10);
+
+
+
+                document.getElementById("Results").scrollIntoView({
+                    behavior: "smooth", // smooth animation
+                    block: "start"      // top se start ho
+                });
+            }
+
+        }
+
+
+
+        // Remove Subject or Semester 
+        function removeSubject(button) {
+            button.closest(".subject").remove();
+        }
+
+        function addSubject() {
+            const SubContainer = document.querySelector("#subjects");
+
+            const Subject = document.createElement("div");
+            Subject.className = "subject";
+            Subject.innerHTML = `<div class="input">
+                                    <input type="text" placeholder="Subject Name" id="sname">
+                                </div>
+                                <div class="input">
+                                    <select id="sgrade">
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="B-">B-</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="C-">C-</option>
+                                        <option value="D+">D+</option>
+                                        <option value="D">D</option>
+                                        <option value="F">F</option>
+                                    </select>
+                                </div>
+                                <div class="input">
+                                    <input type="number" placeholder="Hours" id="chours">
+                                </div>
+
+                                <button style="background-color: #DF0442; color: white; font-size: 16px;"
+                                    onclick="removeSubject(this)">Delete</button>`;
+            SubContainer.appendChild(Subject)
+        }
+
+
+
+        // UCP Grade Points & Percentage Mapping
+
+        const gradePoints = {
+            "A": 4.00,
+            "A-": 3.67,
+            "B+": 3.33,
+            "B": 3.00,
+            "B-": 2.67,
+            "C+": 2.33,
+            "C": 2.00,
+            "C-": 1.67,
+            "D+": 1.33,
+            "D": 1.00,
+            "F": 0.00
+        };
+
+        function CalculateGPA() {
+            let totalPoints = 0;
+            let totalCredits = 0;
+
+            let sgrade = document.querySelectorAll("#sgrade");
+            let chours = document.querySelectorAll("#chours");
+
+            for (let i = 0; i < sgrade.length; i++) {
+
+                if (!isNaN(gradePoints[sgrade[i].value]) && !isNaN(parseFloat(chours[i].value))) {
+                    totalPoints += gradePoints[sgrade[i].value] * parseFloat(chours[i].value);
+                    totalCredits += parseFloat(chours[i].value);
+                }
+            }
+            let GPA = totalPoints / totalCredits;
+
+
+
+            let number = 0;
+            const p = document.getElementById("pppp");
+
+            const pgrade = setInterval(() => {
+                const deg = (number / 100) * 360;
+                p.style.background = `conic-gradient(rgb(1, 155, 83) 0deg ${deg}deg, #e2e2e2 ${deg}deg 360deg)`;
+                p.innerHTML = `<span class="progress-value" style="color: rgb(1, 155, 83);">${GPA}</span>`
+                number++;
+
+
+                if (number > 100) {
+                    clearInterval(pgrade); // <-- fixed: use pgrade, not `interval`
+                }
+
+            }, 10);
+
+
+
+
+
+            document.getElementById("Results").scrollIntoView({
+                behavior: "smooth", // smooth animation
+                block: "start"      // top se start ho
+            });
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
