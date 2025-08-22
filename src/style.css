@@ -80,6 +80,16 @@ button:hover, .btn:hover {
     color: var(--green);
 }
 
+.author{
+    background-color: var(--gray);
+    padding: 20px;
+}
+.author>:first-child, .tags{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 
 
 header,
