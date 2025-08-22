@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,221 +112,106 @@
         }
     </style>
 
+    
 
 
-
+    <!-- Website & Organization Schema -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    
-  
-    {
-      "@type": "WebSite",
-      "@id": "https://ctool.fun/#website",
-      "url": "https://ctool.fun/",
-      "name": "Ctool.fun",
-      "description": "Ctool.fun — Free online calculators, converters, and productivity tools for students & professionals.",
-      "publisher": { "@id": "https://ctool.fun/#organization" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://ctool.fun/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
-      "inLanguage": "en"
-    },
-
-    
-    
-
-    {
-      "@type": "Organization",
-      "@id": "https://ctool.fun/#organization",
-      "name": "Ctool.fun",
-      "url": "https://ctool.fun/",
-      "logo": {
-        "@type": "ImageObject",
-        "@id": "https://ctool.fun/#logo",
-        "url": "https://ctool.fun/src/c-tool-website-logo.png",
-        "width": 300,
-        "height": 300,
-        "caption": "Ctool.fun"
-      },
-      "image": { "@id": "https://ctool.fun/#logo" },
-      "sameAs": [
-        "https://facebook.com/ctoolfun",
-        "https://twitter.com/ctoolfun",
-        "https://linkedin.com/company/ctoolfun"
-      ],
-      "contactPoint": [
         {
-          "@type": "ContactPoint",
-          "contactType": "Customer Support",
-          "email": "support@ctool.fun",
-          "telephone": "+92-300-1234567",
-          "areaServed": "Worldwide",
-          "availableLanguage": ["en", "ur"]
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "C Tool",
+            "url": "https://ctool.fun",
+            "logo": "https://ctool.fun/src/c-tool-website-logo.png",
+            "sameAs": [
+                "https://www.facebook.com/ctool",
+                "https://www.linkedin.com/company/ctool"
+            ]
         }
-      ]
-    },
+    </script>
 
-    
-
-
-    {
-      "@type": "WebPage",
-      "@id": "https://ctool.fun/#webpage",
-      "url": "https://ctool.fun/",
-      "name": "Ctool.fun — Free Online Tools",
-      "isPartOf": { "@id": "https://ctool.fun/#website" },
-      "about": { "@id": "https://ctool.fun/#organization" },
-      "description": "Access free online tools, calculators, and resources for education, productivity, and everyday tasks.",
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://ctool.fun/images/homepage-banner.jpg",
-        "width": 1600,
-        "height": 900
-      },
-      "breadcrumb": { "@id": "https://ctool.fun/#breadcrumb" },
-      "inLanguage": "en",
-      "datePublished": "2025-08-01",
-      "dateModified": "2025-08-14"
-    },
-
-    
-
-    
-
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://ctool.fun/#breadcrumb",
-      "itemListElement": [
+    <!-- Website Schema -->
+    <script type="application/ld+json">
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://ctool.fun/"
-        }
-      ]
-    },
-
-    
-
-
-    {
-  "@type": "SoftwareApplication",
-  "@id": "https://ctool.fun/uaf-calculator/#app",
-  "name": "UAF CGPA & GPA Calculator",
-  "operatingSystem": "Web",
-  "applicationCategory": "EducationalApplication",
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://ctool.fun/uaf-calculator/"
-  },
-  "publisher": { "@id": "https://ctool.fun/#organization" },
-  "url": "https://ctool.fun/uaf-calculator/",
-  "screenshot": "https://ctool.fun/images/uaf-calculator-screenshot.jpg",
-  "featureList": [
-    "Marks % to GPA & Grade",
-    "GPA to Percentage",
-    "Semester GPA & overall CGPA",
-    "UAF grading scale mapping",
-    "Mobile-first, instant results"
-  ],
-  "softwareVersion": "1.0.0",
-  "inLanguage": "en",
-  
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "ratingCount": "124",
-    "reviewCount": "45",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
-},
-
-{
-            "@type": "Product",
-            "name": "UAF Calculator CGPA 2025 | Live GPA & Result Calculator",
-            "image": [
-                "/src/uaf-cgpa-calculator-2025.png",
-                "/src/uaf-cgpa-calculator-live.png",
-                "/src/uaf-cgpa-calculator-online.png"
-                ],
-            "description": "Free UAF Calculator to check GPA, CGPA, marks & grades instantly. 100% accurate, live results using official UAF grading policy. Try it now!",
-            "brand": {
-                "@type": "Brand",
-                "name": "C Tool"
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://ctool.fun/#website",
+            "url": "https://ctool.fun/",
+            "name": "C Tool",
+            "description": "C Tool provides free online calculators and converters for students and professionals including GPA, CGPA, percentage, and more.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "C Tool",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://ctool.fun/logo.png"
+                }
             },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "120"
-            },
-            "offers": {
-                "@type": "AggregateOffer",
-                "offerCount": 100,
-                "lowPrice": 0,
-                "highPrice": 0,
-                "price": "0",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "priceValidUntil": "2027-12-31"
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://ctool.fun/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
             }
-        },
-
-
-
-        {
-      "@type": "FAQPage",
-      "@id": "https://ctool.fun/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Ctool.fun?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ctool.fun is a free platform offering calculators, converters, and productivity tools for students and professionals."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the UAF CGPA & GPA Calculator free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, it is 100% free, mobile-friendly, and works instantly without sign-up."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you store my results or personal data?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Calculations run in your browser and we do not store personal results. See our Privacy Policy for details."
-          }
         }
-      ]
-    }
+    </script>
 
-    
-    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ctool.fun/"
+                }
+            ]
+        }
+    </script>
 
-    
+    <!-- FAQ Schema Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "What is Ctool.fun?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ctool.fun is a free platform offering calculators, converters, and productivity tools for students and professionals."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Is the UAF CGPA & GPA Calculator free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, it is 100% free, mobile-friendly, and works instantly without sign-up."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Do you store my results or personal data?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Calculations run in your browser and we do not store personal results. See our Privacy Policy for details."
+                }
+            }]
+        }
+    </script>
 
 
-  ]
-}
-</script>
 
 
 
 
 
 
+
+    <!--  
     
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -338,18 +222,18 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-W398SQXZ');</script>
 
-
+    -->
 
 </head>
 
 <body>
 
-  
+    <!--  
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W398SQXZ" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
 
-
+    -->
 
     <header>
         <div class="header">
@@ -391,8 +275,8 @@
                     <li>100% secure</li>
                 </ul>
                 <div class="btn-section">
-                    <a href="" class="btn" style="background-color: #01757d; color: white;">Our Tools</a>
-                    <a href="" class="btn" style="border: 1px solid #01757d; color: #01757d;">Learn More</a>
+                    <a href="#tools" class="btn" style="background-color: #01757d; color: white;">Our Tools</a>
+                    <a href="#features" class="btn" style="border: 1px solid #01757d; color: #01757d;">Learn More</a>
                 </div>
             </div>
             <img src="/img/ctool-hero-image.png" alt=" Hero Image of Ctool Website " width="500" height="500">
@@ -432,7 +316,7 @@
         <hr>
 
         <!-- Tools Section -->
-        <h2 class="clr" style="text-align: center; font-size: 40px; font-weight: 900;">Most Loved Tools</h2>
+        <h2 class="clr" style="text-align: center; font-size: 40px; font-weight: 900;" id="tools">Most Loved Tools</h2>
         <p style="text-align: center;">Used thousands of times each month — built for speed & accuracy.</p>
 
         <ul class="links" style="margin-top: 50px;">
@@ -446,43 +330,26 @@
         <div class="card-container">
 
             <div class="clm card">
-                <h3 class="clr">UAF Calculator CGPA</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, ad.</p>
+                <h3 class="clr">UAF CGPA, GPA Calculator (live 2025)</h3>
+                <p>Check GPA, CGPA, and grades in seconds using UAF calculation rules.</p>
                 <div class="tags">
-                    <span>GPA</span>
-                    <span>CGPA</span>
-                    <span>UAF Grades</span>
+                    <span>UAF Calculator</span>
+                    <span>UAF GPA Calculate</span>
+                    <span>UAF GPA & CGPA Online</span>
+                    <span>UAF Live Result Calculate</span>
                 </div>
-                <a href="" class="btn" style="background-color: #01757d; color: white; width: fit-content;">Open
-                    Tool</a>
+                <a href="/tools/uaf-calculator.html" class="btn"
+                    style="background-color: #01757d; color: white; width: fit-content;">Open
+                    UAF Calculator Tool</a>
             </div>
 
-            <div class="clm card">
-                <h3 class="clr">UAF Calculator CGPA</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, ad.</p>
-                <div class="tags">
-                    <span>GPA</span>
-                    <span>CGPA</span>
-                    <span>UAF Grades</span>
-                </div>
-                <a href="" class="btn" style="background-color: #01757d; color: white; width: fit-content;">Open
-                    Tool</a>
-            </div>
 
-            <div class="clm card">
-                <h3 class="clr">UAF Calculator CGPA</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, ad.</p>
-                <div class="tags">
-                    <span>GPA</span>
-                    <span>CGPA</span>
-                    <span>UAF Grades</span>
-                </div>
-                <a href="" class="btn" style="background-color: #01757d; color: white; width: fit-content;">Open
-                    Tool</a>
-            </div>
+
+
+
 
         </div>
-        <a href="" class="btn"
+        <a href="/tools/tools.html" class="btn"
             style="background-color: #01757d; color: white; width: fit-content; margin-top: 50px;">View All Tools</a>
 
 
@@ -525,9 +392,6 @@
 
 
 
-
-
-
         <hr>
 
         <!-- How its Work Section -->
@@ -559,6 +423,32 @@
         <p style="padding: 20px; border-left: 2px solid #01757d; background-color: #01757d10; margin-top: 40px;">
             <strong>Helper Note:</strong> <br> “No data is saved. All calculations run in your device.”
         </p>
+
+
+
+        <hr>
+        <!-- Features Section -->
+        <h2 class="clr" style="text-align: center; font-size: 40px; font-weight: 900;" id="features">Why Choose C Tool
+            for Your GPA, CGPA & Academic Calculations?</h2>
+
+
+        <ul class="links">
+            <li><strong>Policy-Based Accuracy: </strong>Each GPA and CGPA calculator is updated according to the
+                official grading policies of UAF, UCP, and other universities.</li>
+            <li><strong>Fast and Offline Friendly: </strong>All calculations happen directly in your browser, with no
+                server latency.</li>
+            <li><strong>100% Privacy and Secure: </strong>No sign-ups, no logins, no data collection. Your results stay
+                only on your device.</li>
+            <li><strong>Mobile & Cross-Device Ready: </strong>Whether it’s a phone, tablet, or laptop – the tools are
+                fast and responsive.</li>
+            <li><strong>Research-Backed Formulas: </strong>Academic references and student community feedback verify
+                each formula.</li>
+            <li><strong>Trusted by Thousands: </strong>50K+ calculations every month; cited in blogs, student forums,
+                and study groups.</li>
+            <li><strong>Always Free:</strong>Free to use, with no hidden charges, and ads kept to a minimum.</li>
+        </ul>
+
+
 
 
 
@@ -659,8 +549,6 @@
 
 
 
-
-
     <!-- JavaScript Functions Section -->
     <script>
         function showMenu() {
@@ -669,6 +557,5 @@
         }
     </script>
 </body>
-
 
 </html>
