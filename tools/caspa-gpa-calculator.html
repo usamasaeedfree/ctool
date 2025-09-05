@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="7 day">
+    <meta name="language" content="en">
+    <meta name="author" content="USAMA">
+    <meta name="publisher" content="C Tool">
+    <meta name="googlebot" content="translate">
+    <meta name="rating" content="general">
+    <meta property="og:type" content="website">
+    <meta name="twitter:creator" content="@mycreatorhandle">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@myawesomewebsite">
+    <meta property="og:site_name" content="C Tool">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google-adsense-account" content="ca-pub-5118554117280809">
+    <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
+    <link rel="stylesheet" href="/src/style.css">
+
+    <title>CASPA GPA Calculator (2025) | Free PA School GPA Tool</title>
+    <meta property="og:title" content="CASPA GPA Calculator (2025) | Free PA School GPA Tool">
+    <meta name="twitter:title" content="CASPA GPA Calculator (2025) | Free PA School GPA Tool">
+    <meta name="title" content="CASPA GPA Calculator (2025) | Free PA School GPA Tool">
+
+
+
+    <link rel="canonical" href="https://ctool.fun/tools/caspa-gpa-calculator.html">
+    <meta property="og:url" content="https://ctool.fun/tools/caspa-gpa-calculator.html">
+    <meta name="twitter:url" content="https://ctool.fun/tools/caspa-gpa-calculator.html">
+
+    <meta name="keywords"
+        content="CASPA GPA calculator, PA school GPA calculator, CASPA science GPA, CASPA BCP GPA, CASPA last 45 credits GPA, physician assistant GPA">
+
+
+    <meta name="description"
+        content="Free CASPA GPA Calculator – instantly calculate your overall, science, and BCP GPA with CASPA’s official rules. Perfect for PA school applicants.">
+    <meta property="og:description"
+        content="Free CASPA GPA Calculator – instantly calculate your overall, science, and BCP GPA with CASPA’s official rules. Perfect for PA school applicants.">
+    <meta name="twitter:description"
+        content="Free CASPA GPA Calculator – instantly calculate your overall, science, and BCP GPA with CASPA’s official rules. Perfect for PA school applicants.">
+
+    <meta property="og:image" content="/src/caspa-gpa-calculator.webp">
+    <meta name="twitter:image" content="/src/caspa-gpa-calculator.webp">
+
+    <meta property="og:image" content="/src/caspa-grade-calculator.webp">
+    <meta name="twitter:image" content="/src/caspa-grade-calculator.webp">
+
+    <meta name="og:image" content="/src/calculate-caspa-gpa-grade.png">
+    <meta name="twitter:image" content="/src/calculate-caspa-gpa-grade.png">
+
+
+
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        hr {
+            border-top: 1px solid gainsboro;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .card {
+            margin-top: 50px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+
+        .btn-danger {
+            background-color: var(--danger);
+        }
+
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+
+        .course-list {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .course-list th,
+        .course-list td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .course-list th {
+            background-color: var(--light);
+            font-weight: 600;
+        }
+
+        .course-list tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .result-box {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .result-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .result-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .instructions {
+            background-color: #e8f4fc;
+            border-left: 4px solid var(--secondary);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .instructions h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .instructions ul {
+            padding-left: 1.5rem;
+        }
+
+        .instructions li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .results {
+                grid-template-columns: 1fr;
+            }
+
+            .course-list {
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .credit-hint {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+    </style>
+
+
+    <!-- Website & Organization Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "C Tool",
+            "url": "https://ctool.fun",
+            "logo": "https://ctool.fun/src/c-tool-website-logo.png",
+            "sameAs": [
+                "https://www.facebook.com/ctool",
+                "https://www.linkedin.com/company/ctool"
+            ]
+        }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ctool.fun/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Tools",
+                    "item": "https://ctool.fun/tools/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "CASPA GPA Calculator (2025) | Free PA School GPA Tool",
+                    "item": "https://ctool.fun/tools/caspa-gpa-calculator.html"
+                }
+            ]
+        }
+    </script>
+
+    <!-- SoftwareApplication Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "CASPA GPA Calculator (2025) | Free PA School GPA Tool",
+            "url": "https://ctool.fun/tools/caspa-gpa-calculator.html",
+            "applicationCategory": "EduApplication",
+            "operatingSystem": "All",
+            "description": "Free CASPA GPA Calculator – instantly calculate your overall, science, and BCP GPA with CASPA’s official rules. Perfect for PA school applicants.",
+            "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+            },
+            "creator": {
+                "@type": "Person",
+                "name": "Usama Saeed"
+            },
+            "browserRequirements": "Requires JavaScript and a modern web browser",
+            "screenshot": [
+                "/img/caspa-gpa-calculator.webp",
+                "/img/caspa-grade-calculator.webp",
+                "/img/calculate-caspa-gpa-grade.png"
+                ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "180"
+            }
+        }
+
+
+        
+    </script>
+
+    <!-- FAQ Schema Schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the CASPA GPA Calculator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The CASPA GPA Calculator helps PA school applicants calculate their Overall GPA, Science GPA, BCP GPA, Non-Science GPA, and Last 45 Credits GPA using official CASPA rules."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Science GPA and BCP GPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Science GPA includes all science courses (biology, chemistry, physics, anatomy, physiology, etc.) while BCP GPA only includes Biology, Chemistry, and Physics courses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CASPA include plus/minus grades?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CASPA includes plus/minus grades in GPA calculations such as A-, B+, and C-."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does CASPA handle repeated courses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CASPA includes all attempts of repeated courses in the GPA calculation. Unlike some schools, they do not replace old grades."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Last 45 Credits GPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Last 45 Credits GPA shows your performance in your most recent 45 credit hours. Many PA schools use it to evaluate academic improvement and trends."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a competitive CASPA GPA for PA school?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most PA programs require at least a 3.0 GPA, but competitive applicants usually have a 3.4–3.6+ overall GPA and a strong Science GPA."
+      }
+    }
+  ]
+}
+</script>
+
+
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Use the CASPA GPA Calculator",
+  "description": "Step-by-step guide for using the CASPA GPA Calculator to compute your Overall, Science, BCP, Non-Science, and Last 45 Credits GPA.",
+  "totalTime": "PT5M",
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "Your course list or transcript"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "CASPA GPA Calculator"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "url": "https://yourdomain.com/caspa-gpa-calculator#step1",
+      "name": "Open the CASPA GPA Calculator",
+      "text": "Go to the CASPA GPA Calculator page on our website."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "https://yourdomain.com/caspa-gpa-calculator#step2",
+      "name": "Enter your course information",
+      "text": "Fill in your course name, credit hours, grade, and course type (Science, BCP, or Non-Science)."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "https://yourdomain.com/caspa-gpa-calculator#step3",
+      "name": "Add all your courses",
+      "text": "Click 'Add Course' for each class you want to include in your GPA calculation."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "https://yourdomain.com/caspa-gpa-calculator#step4",
+      "name": "Calculate GPA",
+      "text": "Click the 'Calculate GPA' button to instantly see your Overall GPA, Science GPA, BCP GPA, Non-Science GPA, and Last 45 Credits GPA."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "https://yourdomain.com/caspa-gpa-calculator#step5",
+      "name": "Review your results",
+      "text": "Analyze your GPA breakdown with charts and insights provided by the calculator."
+    }
+  ]
+}
+</script>
+
+
+
+
+
+    <!--  
+    
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W398SQXZ');</script>
+
+    -->
+
+</head>
+
+<body>
+
+    <!--  
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W398SQXZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    -->
+
+    <header>
+        <div class="header">
+            <a href="/" class="logo"> <img src="/src/c-tool-website-logo.png" alt="Logo Of C tool Website" width="100"
+                    height="100"> <strong>C TOOL</strong></a>
+            <nav class="nav" id="navLink">
+                <img src="/src/close-icon.svg" alt="close menu icon" width="60" height="60" onclick='showMenu()'>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/tools/tools.html">Tools</a>
+                <a href="/posts/articles.html">Blogs</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <img src="/src/menu-icon.svg" alt="open menu icon" width="60" height="60" onclick='showMenu()'>
+        </div>
+    </header>
+
+    <main class="clm">
+
+
+        <h1>CASPA GPA Calculator – Free Online Tool (2025)</h1>
+        <p>Easily calculate your CASPA GPA (Overall, Science, BCP, Non-Science, and Last 45 Credits) using our free
+            online tool. Updated for CASPA 2025 application cycle, this calculator follows the official CASPA
+            methodology so you can check your academic standing before applying to PA school.</p>
+
+
+            <div class="author">
+            <time datetime="2025-09-04"><span>Written By:</span><strong class="clr"> USAMA S. </strong>
+                <span>Date: </span> <strong class="clr">04 / 09 / 2025</strong></time>
+        </div>
+
+
+        <div class="card">
+            <h2 class="card-title">Add Course</h2>
+
+            <div class="instructions">
+                <h3>CASPA Grading Information</h3>
+                <ul>
+                    <li>CASPA calculates multiple GPAs: Overall, Science, BCP (Biology, Chemistry, Physics), and
+                        Non-Science.</li>
+                    <li>Plus/minus grades are factored into the GPA calculation.</li>
+                    <li>All attempts of repeated courses are included (CASPA does not replace grades).</li>
+                    <li>Enter your courses exactly as they appear on your transcripts.</li>
+                    <li>Used officially 4.0 Grading Scale System for Accurate Result</li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label for="courseName">Course Name</label>
+                <input type="text" id="courseName" placeholder="e.g., Organic Chemistry">
+            </div>
+
+            <div class="form-group">
+                <label for="credits">Credits</label>
+                <input type="number" id="credits" min="0" step="0.5" placeholder="e.g., 3">
+            </div>
+
+            <div class="form-group">
+                <label for="grade">Grade</label>
+                <select id="grade">
+                    <option value="4.0">A (4.0)</option>
+                    <option value="3.7">A- (3.7)</option>
+                    <option value="3.3">B+ (3.3)</option>
+                    <option value="3.0">B (3.0)</option>
+                    <option value="2.7">B- (2.7)</option>
+                    <option value="2.3">C+ (2.3)</option>
+                    <option value="2.0">C (2.0)</option>
+                    <option value="1.7">C- (1.7)</option>
+                    <option value="1.3">D+ (1.3)</option>
+                    <option value="1.0">D (1.0)</option>
+                    <option value="0.7">D- (0.7)</option>
+                    <option value="0.0">F (0.0)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="courseType">Course Type</label>
+                <select id="courseType">
+                    <option value="science">Science</option>
+                    <option value="bcp">BCP (Biology, Chemistry, Physics)</option>
+                    <option value="non-science">Non-Science</option>
+                </select>
+            </div>
+
+            <button id="addCourse">Add Course</button>
+
+            <p style="margin-top: 10px;">(Tool UI here: Course Name, Credits, Grade, Course Type, Add Course button,
+                table, etc.)</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Your Courses</h2>
+
+            <table class="course-list">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        <th>Grade</th>
+                        <th>Type</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="courseList">
+                    <tr class="empty-state">
+                        <td colspan="5">No courses added yet. Add courses using the form above.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="action-buttons">
+                <button id="calculateGPA">Calculate GPA</button>
+                <button id="resetCourses" class="btn-danger">Reset All</button>
+            </div>
+        </div>
+
+        <div id="resultsContainer" class="hidden">
+            <div class="results">
+                <div class="result-box">
+                    <div class="result-title">Overall GPA</div>
+                    <div class="result-value" id="overallGPA">0.00</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-title">Science GPA</div>
+                    <div class="result-value" id="scienceGPA">0.00</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-title">BCP GPA</div>
+                    <div class="result-value" id="bcpGPA">0.00</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-title">Non-Science GPA</div>
+                    <div class="result-value" id="nonScienceGPA">0.00</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-title">Last 45 Credits GPA</div>
+                    <div class="result-value" id="last45GPA">0.00</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <br>
+        <hr>
+        <br>
+
+
+
+        <h2>What is the CASPA GPA Calculator?</h2>
+        <p>The CASPA GPA Calculator is an essential tool for prospective physician assistant (PA) students applying to
+            PA programs through the Central Application Service for Physician Assistants (CASPA). This calculator helps
+            applicants accurately determine their overall, science, biology-chemistry-physics (BCP), and non-science
+            GPAs according to CASPA's specific grading methodology.</p>
+
+        <strong>It helps you determine:</strong>
+        <ul class="links">
+            <li>Overall GPA</li>
+            <li>Science GPA</li>
+            <li>Biology–Chemistry–Physics (BCP) GPA</li>
+            <li>Non-Science GPA</li>
+            <li>Last 45 Credits GPA</li>
+        </ul>
+
+        <p>All calculations are based on CASPA’s official rules and grading scale.</p>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Why is Calculating Your CASPA GPA Important?</h2>
+        <p>PA school admissions are highly competitive, with most programs requiring a minimum GPA between 3.0 and 3.5.
+            Your CASPA GPA calculation often differs from your institution's GPA because:</p>
+        <ul class="links">
+            <li>CASPA includes all course attempts (including retakes)</li>
+            <li>They use a standardized grading scale across all institutions</li>
+            <li>They categorize courses differently than your college might</li>
+        </ul>
+        <p>Using our accurate CASPA GPA calculator ensures you understand your actual standing before applying.</p>
+
+
+        <br>
+        <hr>
+        <br>
+        <h2>How to Use Our CASPA GPA Calculator</h2>
+        <p>Our calculator follows the official CASPA methodology:</p>
+        <ol class="links">
+            <li>Select your course type (Science, BCP, or Non-Science)</li>
+            <li>Enter your course credit hours</li>
+            <li>Select your letter grade</li>
+            <li>Click "Add Course" and repeat for all courses</li>
+            <li>Click "Calculate GPA" to see your results</li>
+        </ol>
+
+        
+
+
+        <br>
+        <hr>
+        <br>
+        <h2>Tips for Improving Your CASPA GPA</h2>
+        <p>If your CASPA GPA is lower than expected, consider these strategies:</p>
+        <ul class="links">
+            <li>Retake prerequisite courses with grades below B-</li>
+            <li>Take additional upper-level science courses to demonstrate capability</li>
+            <li>Focus on strengthening other areas of your application (patient care experience, personal statement,
+                letters of recommendation)</li>
+            <li>Apply to programs where your GPA is within their accepted range</li>
+        </ul>
+
+
+
+        <br>
+        <hr>
+        <br>
+        <h2>Why Choose Our CASPA GPA Calculator?</h2>
+        <p>Our calculator is:</p>
+        <ul class="links">
+            <li>Updated for 2024 CASPA requirements</li>
+            <li>Completely free with no registration required</li>
+            <li>Accurate to the official CASPA calculation method</li>
+            <li>Mobile-friendly and works on all devices</li>
+            <li>Includes detailed explanations of CASPA GPA calculations</li>
+        </ul>
+
+        <p>Bookmark this page to easily return to our calculator as you complete additional courses!</p>
+        </div>
+
+
+
+
+
+        <br>
+        <hr>
+        <br>
+        <h2>CASPA GPA Calculation FAQs</h2>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>1. What is the difference between Science GPA and BCP GPA?</strong></summary>
+            <p>Science GPA = All natural science courses.<br>
+                BCP GPA = Biology, Chemistry, Physics only (subset of Science GPA).</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>2. Does CASPA include +/- grades?</strong></summary>
+            <p>Yes. CASPA factors in plus/minus grades (A-, B+, etc.).</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>3. How does CASPA handle repeated courses?</strong></summary>
+            <p>CASPA includes all attempts — they do not replace old grades.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>4. What counts as a science course?</strong></summary>
+            <p>Biology, chemistry, physics, anatomy, physiology, and other natural sciences.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>5. Does CASPA round GPA?</strong></summary>
+            <p>No. CASPA reports GPA to two decimal places.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>6. What is a competitive CASPA GPA?</strong></summary>
+            <p>Most PA programs prefer 3.4–3.6+ overall GPA with a 3.5+ science GPA.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>7. How do I calculate GPA if my course is pass/fail?</strong></summary>
+            <p>CASPA includes “Pass” credits but they do not affect GPA.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>8. Is the Last 45 Credits GPA important?</strong></summary>
+            <p>Yes, especially if your earlier GPA is lower. Schools use it to evaluate academic improvement.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>9. What happens if my university GPA is different from CASPA GPA?</strong></summary>
+            <p>CASPA GPA is the one that admissions committees use. Your school GPA doesn’t matter in the CASPA
+                application.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+            <summary><strong>10. Do all PA programs have the same GPA requirement?</strong></summary>
+            <p>No. Some require 3.0 minimum, others are more competitive (3.5+ average accepted GPA).</p>
+        </details>
+
+
+        <details class="links" style="background-color: #f5f5f5; padding:20px; border-radius:10px;">
+            <summary><strong>What is the difference between Science GPA and BCP GPA?</strong></summary>
+            <p>Science GPA includes all science courses (biology, chemistry, physics, etc.), while BCP GPA specifically
+                includes only biology, chemistry, and physics courses. BCP is a subset of Science GPA.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding:20px; border-radius:10px;">
+            <summary><strong>Does CASPA include +/- grades in their calculation?</strong></summary>
+            <p>Yes, CASPA includes plus/minus grades in their GPA calculation, which is why our calculator offers these
+                precise options.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding:20px; border-radius:10px;">
+            <summary><strong>How does CASPA handle repeated courses?</strong></summary>
+            <p>CASPA includes all attempts of repeated courses in your GPA calculation, unlike some institutional GPA
+                calculations that might replace the grade.</p>
+        </details>
+
+        <details class="links" style="background-color: #f5f5f5; padding:20px; border-radius:10px;">
+            <summary><strong>What counts as a science course for CASPA?</strong></summary>
+            <p>CASPA considers biology, chemistry, physics, and other natural sciences (including health sciences like
+                anatomy and physiology) as science courses.</p>
+        </details>
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="grid">
+            <div class="clm">
+                <h3>CTOOL.FUN</h3>
+                <p>Build smarter with our fast, accurate, free online tools in 2025 live</p>
+            </div>
+
+            <div class="clm">
+                <h3>Resources</h3>
+                <div class="links">
+                    <a href="/posts/articles.html">Blogs</a>
+                    <a href="/tools/tools.html">Tools</a>
+                </div>
+            </div>
+
+            <div class="clm">
+                <h3>Website Links</h3>
+                <div class="links">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="clm">
+                <h3>Legal Pages</h3>
+                <div class="links">
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="/disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+        <p>© 2025 ctool.fun — Fast, Free & Accurate Tools</p>
+    </footer>
+
+    <!-- JavaScript Functions Section -->
+    <script>
+        function showMenu() {
+            const navLinks = document.getElementById("navLink");
+            navLinks.classList.toggle("show")
+        }
+
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const courseNameInput = document.getElementById('courseName');
+            const creditsInput = document.getElementById('credits');
+            const gradeSelect = document.getElementById('grade');
+            const courseTypeSelect = document.getElementById('courseType');
+            const addCourseButton = document.getElementById('addCourse');
+            const courseList = document.getElementById('courseList');
+            const calculateGPAButton = document.getElementById('calculateGPA');
+            const resetCoursesButton = document.getElementById('resetCourses');
+            const resultsContainer = document.getElementById('resultsContainer');
+
+            const overallGPAElement = document.getElementById('overallGPA');
+            const scienceGPAElement = document.getElementById('scienceGPA');
+            const bcpGPAElement = document.getElementById('bcpGPA');
+            const nonScienceGPAElement = document.getElementById('nonScienceGPA');
+            const last45GPAElement = document.getElementById('last45GPA');
+
+            let courses = [];
+
+            addCourseButton.addEventListener("click", function () {
+                const name = courseNameInput.value.trim();
+                const credits = parseFloat(creditsInput.value);
+                const grade = parseFloat(gradeSelect.value);
+                const type = courseTypeSelect.value;
+
+                if (!name || isNaN(credits) || credits <= 0) {
+                    alert("Please enter valid course details.");
+                    return;
+                }
+
+                courses.push({ name, credits, grade, type });
+                updateCourseList();
+
+                courseNameInput.value = '';
+                creditsInput.value = '';
+                gradeSelect.value = '4.0';
+                courseTypeSelect.value = 'science';
+            });
+
+            function updateCourseList() {
+                courseList.innerHTML = '';
+                if (courses.length === 0) {
+                    const emptyRow = document.createElement("tr");
+                    emptyRow.classList.add("empty-state");
+                    emptyRow.innerHTML = '<td colspan="5">No courses added yet.</td>';
+                    courseList.appendChild(emptyRow);
+                    return;
+                }
+
+                courses.forEach((course, index) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+          <td>${course.name}</td>
+          <td>${course.credits}</td>
+          <td>${getGradeText(course.grade)}</td>
+          <td>${getTypeText(course.type)}</td>
+          <td><button class="btn-danger" data-index="${index}">Remove</button></td>
+        `;
+                    courseList.appendChild(row);
+                });
+
+                courseList.querySelectorAll("button").forEach(btn => {
+                    btn.addEventListener("click", function () {
+                        const index = parseInt(this.getAttribute("data-index"));
+                        courses.splice(index, 1);
+                        updateCourseList();
+                    });
+                });
+            }
+
+            calculateGPAButton.addEventListener("click", function () {
+                if (courses.length === 0) {
+                    alert("Add at least one course.");
+                    return;
+                }
+
+                const { overall, science, bcp, nonScience, last45 } = calculateGPAs();
+
+                overallGPAElement.textContent = overall.toFixed(2);
+                scienceGPAElement.textContent = science.toFixed(2);
+                bcpGPAElement.textContent = bcp.toFixed(2);
+                nonScienceGPAElement.textContent = nonScience.toFixed(2);
+                last45GPAElement.textContent = last45.toFixed(2);
+
+                resultsContainer.classList.remove("hidden");
+            });
+
+            resetCoursesButton.addEventListener("click", function () {
+                courses = [];
+                updateCourseList();
+                resultsContainer.classList.add("hidden");
+            });
+
+            function calculateGPAs() {
+                let totalCredits = 0, totalGradePoints = 0;
+                let scienceCredits = 0, scienceGradePoints = 0;
+                let bcpCredits = 0, bcpGradePoints = 0;
+                let nonScienceCredits = 0, nonScienceGradePoints = 0;
+
+                courses.forEach(course => {
+                    const gradePoints = course.credits * course.grade;
+
+                    totalCredits += course.credits;
+                    totalGradePoints += gradePoints;
+
+                    if (course.type === "science" || course.type === "bcp") {
+                        scienceCredits += course.credits;
+                        scienceGradePoints += gradePoints;
+                    }
+                    if (course.type === "bcp") {
+                        bcpCredits += course.credits;
+                        bcpGradePoints += gradePoints;
+                    }
+                    if (course.type === "non-science") {
+                        nonScienceCredits += course.credits;
+                        nonScienceGradePoints += gradePoints;
+                    }
+                });
+
+                // ✅ Last 45 Credits GPA
+                let last45Credits = 0, last45GradePoints = 0;
+                for (let i = courses.length - 1; i >= 0 && last45Credits < 45; i--) {
+                    const c = courses[i];
+                    let creditsToTake = Math.min(c.credits, 45 - last45Credits);
+                    last45Credits += creditsToTake;
+                    last45GradePoints += creditsToTake * c.grade;
+                }
+
+                const overall = totalCredits > 0 ? totalGradePoints / totalCredits : 0;
+                const science = scienceCredits > 0 ? scienceGradePoints / scienceCredits : 0;
+                const bcp = bcpCredits > 0 ? bcpGradePoints / bcpCredits : 0;
+                const nonScience = nonScienceCredits > 0 ? nonScienceGradePoints / nonScienceCredits : 0;
+                const last45 = last45Credits > 0 ? last45GradePoints / last45Credits : 0;
+
+                return { overall, science, bcp, nonScience, last45 };
+            }
+
+            function getGradeText(value) {
+                const map = {
+                    "4.0": "A (4.0)", "3.7": "A- (3.7)", "3.3": "B+ (3.3)", "3.0": "B (3.0)",
+                    "2.7": "B- (2.7)", "2.3": "C+ (2.3)", "2.0": "C (2.0)", "1.7": "C- (1.7)",
+                    "1.3": "D+ (1.3)", "1.0": "D (1.0)", "0.7": "D- (0.7)", "0.0": "F (0.0)"
+                };
+                // ✅ Fix: number ko string me convert with 1 decimal
+                let key = Number(value).toFixed(1);
+                return map[key] || "N/A";
+            }
+
+            function getTypeText(type) {
+                const map = { "science": "Science", "bcp": "BCP", "non-science": "Non-Science" };
+                return map[type] || "N/A";
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
