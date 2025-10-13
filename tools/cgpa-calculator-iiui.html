@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="7 day">
+    <meta name="language" content="en">
+    <meta name="author" content="usama s - ctool">
+    <meta name="publisher" content="usama s - ctool">
+    <meta name="googlebot" content="translate">
+    <meta name="rating" content="general">
+    <meta property="og:type" content="website">
+    <meta name="twitter:creator" content="@mycreatorhandle">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@myawesomewebsite">
+    <meta property="og:site_name" content="ctool">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google-adsense-account" content="ca-pub-5118554117280809">
+    <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
+    <link rel="stylesheet" href="/src/style.css">
+
+    <title>CGPA Calculator IIUI | Online GPA</title>
+    <meta property="og:title" content="CGPA Calculator IIUI | Online GPA">
+    <meta name="twitter:title" content="CGPA Calculator IIUI | Online GPA">
+    <meta name="title" content="CGPA Calculator IIUI | Online GPA">
+
+    <link rel="canonical" href="https://ctool.fun/tools/cgpa-calculator-iiui.html">
+    <meta property="og:url" content="https://ctool.fun/tools/cgpa-calculator-iiui.html">
+    <meta name="twitter:url" content="https://ctool.fun/tools/cgpa-calculator-iiui.html">
+
+    <meta name="description"
+        content="Calculate your GPA effortlessy with our CGPA calculator IIUI. This is designed specailly for International Islamic University Islamabad (IIUI) students.">
+    <meta property="og:description"
+        content="Calculate your GPA effortlessy with our CGPA calculator IIUI. This is designed specailly for International Islamic University Islamabad (IIUI) students.">
+    <meta name="twitter:description"
+        content="Calculate your GPA effortlessy with our CGPA calculator IIUI. This is designed specailly for International Islamic University Islamabad (IIUI) students.">
+
+    <meta name="keywords"
+        content="cgpa calculator iiui, gpa calculator iiui, iiui gpa system percentage, gpa calculator iiui online, how to calculate gpa iiui, cgpa calculator iiui, international islamic university islamabad(IIUI)">
+
+    <meta property="og:image" content="/img/gpa_cgpa_and_grade_calculator_for_universities.webp">
+    <meta name="twitter:image" content="/img/gpa_cgpa_and_grade_calculator_for_universities.webp">
+
+
+    <style>
+        .calculator {
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            overflow: hidden;
+            gap: 0;
+        }
+
+
+        .tabs {
+            background-color: #F5F5F5;
+            display: flex;
+            align-items: center;
+        }
+
+        .tabs>button {
+            padding: 15px;
+            color: #5e5d5d;
+            border-radius: 0px;
+        }
+
+        .tabs>button:hover,
+        .active {
+            background-color: white;
+            border-bottom: 2px solid #01757D;
+            color: #01757D;
+        }
+
+        button {
+            font-weight: 500;
+            transition: 0.2s ease-in-out;
+            background-color: transparent;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 1px 1px 5px gray;
+        }
+
+        .extra,
+        .tool,
+        .result {
+            padding: 10px 30px;
+        }
+
+        .extra {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            border-bottom: 1px solid #d1d5db;
+        }
+
+        .fld {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .fld>button {
+            background-color: red;
+            color: white;
+        }
+
+        input,
+        select {
+            padding: 8px;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            font-weight: 500;
+            flex-grow: 1;
+            cursor: pointer;
+        }
+
+        .extra>input,
+        select {
+            flex-grow: 0;
+        }
+
+        .tool>h2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 30px 0px;
+        }
+
+        .tool>h2>button {
+            color: white;
+            background-color: rgb(6, 165, 1);
+        }
+
+        .inputs-container {
+            gap: 30px;
+        }
+
+        .btn-section {
+            margin-top: 20px;
+        }
+
+        .btn-section>button {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        .result>h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .result>h3>img {
+            width: 30px;
+        }
+
+        .result_output {
+
+            padding: 50px;
+            background-color: #F5F5F5;
+            border-radius: 10px;
+        }
+
+        .perfect {
+            background: linear-gradient(90deg, #0ea5e9, #3b82f6);
+        }
+
+        .excellent {
+            background: linear-gradient(90deg, #06b6d4, #0891b2);
+        }
+
+        .good {
+            background: linear-gradient(90deg, #10b981, #059669);
+        }
+
+        .average {
+            background: linear-gradient(90deg, #f59e0b, #f97316);
+        }
+
+        .below {
+            background: linear-gradient(90deg, #f97316, #ef4444);
+        }
+
+        .poor {
+            background: linear-gradient(90deg, #ef4444, #dc2626);
+        }
+    </style>
+
+
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Person",
+            "name":"Usama",
+            "url":"https://ctool.fun/about.html",
+            "jobTitle":"Founder, ctool",
+            "description":"Usama builds tools for student to help in calculating GPA cgpa as well as convert gpa into percentage and grades.",
+            "sameAs":[ "https://twitter.com/ctool", "https://www.linkedin.com/in/usama" ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ctool",
+            "url": "https://ctool.fun/",
+            "logo": "/src/ctool.png",
+            "sameAs": [
+                "https://twitter.com/ctool",
+                "https://www.linkedin.com/company/ctool"
+            ],
+            "founder": {
+                "@type": "Person",
+                "name": "Usama"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"ctool",
+            "url":"https://ctool.fun/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://ctool.fun/search?q={search_term_string}",
+                "query-input":"required name=search_term_string"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ctool.fun/"
+                },
+                {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tools",
+                "item": "https://ctool.fun/tools/"
+                },
+                {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "CGPA Calculator IIUI - GPA",
+                "item": "https://ctool.fun/tools/cgpa-calculator-iiui.html"
+                }
+            ]
+        }
+    </script>
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                "@type": "Question",
+                "name": "Is this IIUI gpa app for Android?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, this GPA calculator works on both Android and desktop devices. You can check your live results on any device using this free online web app -- it's 100% free and provides accurate results."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "How can I calculate my IIU Islamabad GPA in this live web app?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "With our live CGPA calculator, you can calculate your CGPA in real time -- just enter your subject and semester values."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Can I convert International Islamic University Islamabad CGPA to percentage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can also use this grading tool to easily convert your CGPA into a percentage, or your percentage into a grade."
+                }
+                }
+            ]
+        }
+    </script>
+
+
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"SoftwareApplication",
+            "name":"CGPA Calculator IIUI | Online GPA",
+            "description":"This is a free online web app specially designed for the students of the University of Agriculture Faisalabad (UAF). It helps them easily calculate their Subject GPA and Cumulative Grade Point Average (CGPA) live, and track their overall academic performance.",
+            "url":"https://ctool.fun/tools/cgpa-calculator-iiui.html",
+            "image":"/img/gpa_cgpa_and_grade_calculator_for_universities.webp",
+            "applicationCategory":"Education",
+            "operatingSystem":"Web",
+            "author": { "@type":"Person", "name":"Usama" },
+            "offers": {
+                "@type":"Offer",
+                "price":"0",
+                "priceCurrency":"USD",
+                "availability":"https://schema.org/InStock"
+            },
+            "aggregateRating": {
+                "@type":"AggregateRating",
+                "ratingValue":"4.9",
+                "ratingCount":"120"
+            }
+        }
+    </script>
+
+
+    <!--  
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W398SQXZ');</script>
+    -->
+</head>
+
+<body>
+    <!--  
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W398SQXZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    -->
+
+    <header>
+        <div class="header">
+            <a href="/" class="logo"><img src="/src/ctool.png" alt="calculate gpa cgap tools logo" width="100"
+                    height="100"><strong>CTOOL</strong></a>
+            <nav id="navLinks">
+                <img src="/src/close-icon.svg" alt="close navigation bar" width="10" height="10" onclick="navBar()">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/tools/tools.html">Tools</a>
+                <a href="/posts/articles.html">Guide</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <img src="/src/menu-icon.svg" alt="close navigation bar" width="10" height="10" onclick="navBar()">
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="clm">
+                <h1>CGPA Calculator for International Islamic University Islamabad (IIUI)</h1>
+                <p>Calculate your GPA effortlessy with our CGPA calculator IIUI. This is designed specailly for International Islamic University Islamabad (IIUI) students. This tool help you dettermine your academic performance by accurately analyzing your grades.</p>
+                <p>Wondering how to calculate GPA IIUI?  Simplly put your grades (e.g., A, B, A+, C), and click on button to calculate Grade point Average instently.</p>
+            </div>
+
+            <div class="calculator clm">
+                <div class="tabs">
+                    <button onclick="openTool('GPA_Calculator', this)" class="tab active">GPA Calculator</button>
+                    <button onclick="openTool('CGPA_Calculator', this)" class="tab">CGPA Calculator</button>
+                    <button onclick="openTool('Grade_Converter', this)" class="tab">Grade Converter</button>
+                </div>
+                <div class="extra">
+                    <input type="checkbox" name="is gpa weighted or not" id="check" onclick="check_box()">
+                    <label for="check">Weighted GPA</label>
+                    <select id="input_types" onchange="Enable_Input_Type()">
+                        <option value="letter">Letter Grade</option>
+                        <option value="point">Grade Point</option>
+                        <option value="percent">Percentage</option>
+                    </select>
+                </div>
+
+                <div class="tool clm" id="GPA_Calculator">
+                    <h2>Calculate Grade Point Average (GPA) <button onclick="Add_Subject()">+Add Subject</button></h2>
+                    <div class="inputs-container clm" id="input-container">
+
+                        <div class="fld">
+                            <input id="subject_name" type="text" title="Enter Subject Name (Optional)"
+                                placeholder="Subj Name">
+                            <input id="subject_hours" type="number" title="Enter Credit Hours"
+                                placeholder="Creidt Hours e.g 5">
+                            <select id="subject_letter" title="Select Grade"></select>
+                            <input id="subject_point" type="number" title="Enter GPA of the Subject"
+                                placeholder="GPA e.g. 3.3" style="display: none;">
+                            <input id="subject_percent" type="number" title="Enter Percentage of Marks"
+                                placeholder="e.g 85%" style="display: none;">
+                            <select id="subject_weight" title="Select Weight"></select>
+                            <button onclick="Removefld(this)">Remove</button>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-section">
+                        <button onclick="Calculate_GPA()">Calculate GPA</button>
+                    </div>
+                </div>
+
+
+
+                <div class="tool clm" id="CGPA_Calculator" style="display: none;">
+                    <h2>Cumulative Grade Point Average (CGPA) <button onclick="Add_Semester()">+Add Semester</button>
+                    </h2>
+                    <div class="inputs-container clm" id="CGPA_input-container">
+
+                        <div class="fld">
+
+                            <input id="semester_name" type="text" title="Enter Subject Name (Optional)"
+                                placeholder="Semester">
+                            <input id="semester_point" type="number" title="Enter GPA" placeholder="GPA e.g. 3.5">
+                            <input id="semester_hour" type="number" title="Enter Credit Hours"
+                                placeholder="Credit Hours e.g. 15">
+                            <button onclick="Removefld(this)">Remove</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="btn-section">
+                        <button onclick="Calculate_CGPA()">Calculate CGPA</button>
+                    </div>
+                </div>
+
+
+
+                <div class="tool clm" id="Grade_Converter" style="display: none;">
+                    <h2>Convert Your Grads</h2>
+                    <div class="inputs-container clm">
+
+                        <div class="fld">
+
+                            <select id="cg_letter" title="Select Grade" style="flex-grow: 1;"></select>
+                            <input id="cg_point" type="number" title="Enter GPA of the Subject"
+                                placeholder="GPA e.g. 3.3" style="display: none;">
+                            <input id="cg_percent" type="number" title="Enter Percentage of Marks" placeholder="e.g 85%"
+                                style="display: none;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="btn-section">
+                        <button onclick="Convert_Grade()">Convert Grades</button>
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+                <div class="result clm">
+                    <hr>
+                    <h3><img src="/src/cumulative_gpa_progress_report.svg"
+                            alt="user cumulative gpa cumulative gpa progress report result" width="10" height="10">
+                        Your Result</h3>
+                    <div class="result_output clm" id="result_output">
+                        <p style="display: flex; flex-direction: column; gap: 5px;"><b>Your</b> <strong
+                                style="font-size: 25px; font-weight: 700;">Score is 0.0</strong>
+
+                            <span
+                                style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content; background: linear-gradient(90deg, #0ea5e9, #3b82f6);">Please
+                                enter your grades to instantly calculate your result!</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="clm">
+                <h2>IIUI CGPA Grading Scale Table (Quality Point)</h2>
+                <p>This is the officially announced grading scale of IIUI University. The same CGPA grading system that is used by the
+                    IIUI to assign grades and marks to the students. Our free online IIUI CGPA Calculator tool also uses this scale for
+                    calculations, which ensures that you get accurate results.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Grade</th>
+                            <th>Percentage Range</th>
+                            <th>Grade Point</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A</td>
+                            <td>80 - 100%</td>
+                            <td>4.00</td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td>75 - 79%</td>
+                            <td>3.50</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>70 - 74%</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>C+</td>
+                            <td>65 - 69%</td>
+                            <td>2.50</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>60 - 64%</td>
+                            <td>2.00</td>
+                        </tr>
+                        <tr>
+                            <td>D+</td>
+                            <td>55 - 59%</td>
+                            <td>1.50</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>50 - 54%</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>Below 50%</td>
+                            <td>0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="clm">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq">
+                    <h3>Is this IIUI gpa app for Android?</h3>
+                    <p>Yes, this GPA calculator works on both Android and desktop devices. You can check your live results on any device using this free online web app -- it's 100% free and provides accurate results.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>How can I calculate my IIU Islamabad GPA in this live web app?</h3>
+                    <p>With our live CGPA calculator, you can calculate your CGPA in real time -- just enter your subject and semester values.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Can I convert International Islamic University Islamabad  CGPA to percentage?</h3>
+                    <p>You can also use this grading tool to easily convert your CGPA into a percentage, or your percentage into a grade.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="grid">
+            <div class="clm">
+                <strong>CTOOL</strong>
+                <p>Simple tool to calculate cumulative grade point average (GPA) and Tracks academic performance.</p>
+            </div>
+
+            <div class="clm">
+                <strong>Legal Pages</strong>
+                <div class="links">
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="/disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+
+            <div class="clm">
+                <strong>Website Links</strong>
+                <div class="links">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="clm">
+                <strong>Resources</strong>
+                <div class="links">
+                    <a href="/posts/articles.html">Blogs</a>
+                    <a href="/tools/tools.html">Tools</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>© 2025 ctool.fun cumulative GPA calculators. All rights reserved.</p>
+    </footer>
+    <script>
+        function navBar() {
+            let nav_Bar = document.getElementById("navLinks");
+            nav_Bar.classList.toggle("show");
+        }
+
+        const grade_scale = [
+            { min: 80, max: 100, letter: "A", point: 4.00 },
+            { min: 75, max: 79.99, letter: "B+", point: 3.50 },
+            { min: 70, max: 74.99, letter: "B", point: 3.00 },
+            { min: 65, max: 69.99, letter: "C+", point: 2.50 },
+            { min: 60, max: 64.99, letter: "C", point: 2.00 },
+            { min: 55, max: 59.99, letter: "D+", point: 1.50 },
+            { min: 50, max: 54.99, letter: "D", point: 1.00 },
+            { min: 0, max: 49.99, letter: "F", point: 0.00 }
+        ];
+
+        let weight_options = { "Regular +0.0": 0, "Honors +0.5": 0.5, "AP/IB +1.0": 1, "Dual Enrollment +0.5": 0.5 };
+
+        function Removefld(button) {
+            button.closest(".fld").remove();
+        }
+        function check_box() {
+            let checkBox = document.getElementById("check");
+            let isChecked = checkBox.checked;
+            if (isChecked == false) {
+                document.querySelectorAll("#subject_weight").forEach(t => t.style.display = "none");
+            }
+            else {
+                document.querySelectorAll("#subject_weight").forEach(t => t.style.display = "flex");
+            }
+        }
+
+        function Add_Weights_Options() {
+            let Selection = document.getElementById("input-container");
+            for (let item in weight_options) {
+                let option = document.createElement("option");
+                option.innerText = item;
+                option.value = item.value;
+                Selection.lastElementChild.children[5].appendChild(option);
+            };
+        };
+
+
+        function Add_Letters_Options() {
+            let selection = document.getElementById("input-container");
+            for (let item in grade_scale) {
+                let option = document.createElement("option");
+                option.innerText = grade_scale[item].letter;
+                option.value = grade_scale[item].letter;
+                selection.lastElementChild.children[2].appendChild(option);
+            };
+        };
+
+        function Add_Letters_Options_Grade() {
+            let selection = document.getElementById("cg_letter");
+            for (let item in grade_scale) {
+                let option = document.createElement("option");
+                option.innerText = grade_scale[item].letter;
+                option.value = grade_scale[item].letter;
+                selection.appendChild(option);
+            };
+        };
+
+        function Enable_Input_Type() {
+            let inputtype = document.getElementById("input_types");
+            let input_Type = ["letter", "point", "percent"];
+
+            for (let i = 0; i < input_Type.length; i++) {
+                if (inputtype.value != input_Type[i]) {
+                    document.querySelectorAll("#subject_" + input_Type[i]).forEach(t => t.style.display = "none")
+                    document.querySelectorAll("#cg_" + input_Type[i]).forEach(t => t.style.display = "none")
+                }
+                else {
+                    document.querySelectorAll("#subject_" + input_Type[i]).forEach(t => t.style.display = "flex")
+                    document.querySelectorAll("#cg_" + input_Type[i]).forEach(t => t.style.display = "flex")
+                }
+            }
+        }
+
+
+
+        Add_Weights_Options();
+        Add_Letters_Options();
+        Enable_Input_Type();
+        check_box();
+        Add_Letters_Options_Grade();
+
+
+        function Add_Subject() {
+            let inputContainer = document.getElementById("input-container");
+            const Subject = document.createElement("div");
+            Subject.className = "fld";
+            Subject.innerHTML = `<input id="subject_name" type="text" title="Enter Subject Name (Optional)"
+                                placeholder="Subj Name">
+                            <input id="subject_hours" type="number" title="Enter Credit Hours"
+                                placeholder="Creidt Hours e.g 5">
+                            <select id="subject_letter" title="Select Grade"></select>
+                            <input id="subject_point" type="number" title="Enter GPA of the Subject" placeholder="GPA e.g. 3.3"
+                                style="display: none;">
+                            <input id="subject_percent" type="number" title="Enter Percentage of Marks" placeholder="e.g 85%"
+                                style="display: none;">
+                            <select id="subject_weight" title="Select Weight"></select>
+                            <button onclick="Removefld(this)">Remove</button>`;
+            inputContainer.appendChild(Subject);
+            Add_Weights_Options();
+            Add_Letters_Options();
+            Enable_Input_Type();
+            check_box();
+        }
+
+        function Add_Semester() {
+            let inputContainer = document.getElementById("CGPA_input-container");
+            const Semester = document.createElement("div");
+            Semester.className = "fld";
+            Semester.innerHTML = `<input id="semester_name" type="text" title="Enter Subject Name (Optional)" placeholder="Semester">
+                            <input id="semester_point" type="number" title="Enter GPA" placeholder="GPA e.g. 3.5">
+                            <input id="semester_hour" type="number" title="Enter Credit Hours" placeholder="Credit Hours e.g. 15">
+                            <button onclick="Removefld(this)">Remove</button>`;
+            inputContainer.appendChild(Semester);
+        }
+
+        function openTool(toolId, btn) {
+            document.querySelectorAll(".tool").forEach(t => t.style.display = "none");
+            document.getElementById(toolId).style.display = "flex";
+            document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+        }
+
+
+
+
+
+
+        function Calculate_CGPA() {
+            let totalPoints = 0;
+            let totalCreditHours = 0;
+
+            let semesters = document.querySelectorAll("#semester_point");
+            let chours = document.querySelectorAll("#semester_hour");
+
+            for (let i = 0; i < semesters.length; i++) {
+                if (!isNaN(parseFloat(semesters[i].value))) {
+                    if (!isNaN(parseFloat(chours[i].value))) {
+
+                        totalPoints += parseFloat(semesters[i].value) * parseFloat(chours[i].value);
+                        totalCreditHours += parseFloat(chours[i].value);
+
+                    } else {
+                        window.alert("Please enter a valid Credit Hourss (e.g., 15, 18).");
+                        chours[i].focus();
+                    }
+                }
+                else {
+                    window.alert("Please enter a valid Grade Points (e.g., 3.5, 3.7, 4).");
+                    semesters[i].focus();
+                }
+            }
+
+            let cgpa = (totalPoints / totalCreditHours).toFixed(2);
+
+            let label;
+            if (cgpa <= 4.0) { label = `<span class="perfect" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Outstanding — perfect score!</span>`; }
+            if (cgpa >= 3.5 && cgpa <= 3.9) {
+                label = `<span class="excellent" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Excellent work — keep it up!</span>`;
+
+            }
+            if (cgpa >= 3.0 && cgpa <= 3.4) { label = `<span class="good" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Good performance — you are doing well.</span>`; }
+            if (cgpa >= 2.5 && cgpa <= 2.9) { label = `<span class="average" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Average — there is room to improve.</span>`; }
+            if (cgpa >= 2.0 && cgpa <= 2.4) { label = `<span class="below" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Below average — consider focusing study strategies.</span>`; }
+            if (cgpa < 2.0) { label = `<span class="poor" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Poor — reach out for help and make a plan to improve.</span>`; }
+
+            let show_result = document.getElementById("result_output");
+            show_result.innerHTML = `<p style="display: flex; flex-direction: column; gap: 8px;"><b>Your</b> <strong style="font-size: 25px; font-weight: 700;">CGPA is ${cgpa}</strong> ${label}</p>`
+
+        }
+
+
+        function Calculate_GPA() {
+            let totalPoints = 0;
+            let totalCreditHours = 0;
+
+            let inputType = document.getElementById("input_types").value;
+            let ch = document.querySelectorAll("#subject_hours");
+
+
+            if (inputType === "letter") {
+                for (let i = 0; i < ch.length; i++) {
+                    let grade_point = document.querySelectorAll("#subject_letter");
+                    if (!isNaN(parseFloat(ch[i].value))) {
+                        for (let j = 0; j < grade_scale.length; j++) {
+                            if (grade_scale[j].letter === grade_point[i].value) {
+                                totalPoints += parseFloat(ch[i].value) * parseFloat(grade_scale[j].point);
+                                totalCreditHours += parseFloat(ch[i].value)
+                            }
+                        }
+                    }
+                    else {
+                        window.alert("Please enter a valid Credit Hours (e.g., 1, 2, 3.3).");
+                        ch[i].focus();
+                    }
+
+                }
+
+            } else if (inputType === "subject_percentage") {
+                for (let i = 0; i < ch.length; i++) {
+                    let grade_point = document.querySelectorAll("#subject_percentage");
+                    if (!isNaN(parseFloat(ch[i].value))) {
+                        if (!isNaN(parseFloat(grade_point[i].value))) {
+
+                            for (let grade of grade_scale) {
+                                if (grade_point[i].value >= grade.min && grade_point[i].value <= grade.max) {
+                                    totalPoints += parseFloat(ch[i].value) * parseFloat(grade.point);
+                                    totalCreditHours += parseFloat(ch[i].value)
+                                }
+                            }
+
+                        }
+                        else {
+                            window.alert("Please enter a valid Grade Point (e.g., 1, 2, 3.3).");
+                            grade_point[i].focus();
+                        }
+                    }
+                    else {
+                        window.alert("Please enter a valid Credit Hours (e.g., 1, 2, 3.3).");
+                        ch[i].focus();
+                    }
+
+                }
+            }
+            else {
+                for (let i = 0; i < ch.length; i++) {
+                    let grade_point = document.querySelectorAll("#subject_grade_point");
+                    if (!isNaN(parseFloat(ch[i].value))) {
+                        if (!isNaN(parseFloat(grade_point[i].value))) {
+                            totalPoints += parseFloat(ch[i].value) * parseFloat(grade_point[i].value);
+                            totalCreditHours += parseFloat(ch[i].value)
+                        }
+                        else {
+                            window.alert("Please enter a valid Grade Point (e.g., 1, 2, 3.3).");
+                            grade_point[i].focus();
+                        }
+                    }
+                    else {
+                        window.alert("Please enter a valid Credit Hours (e.g., 1, 2, 3.3).");
+                        ch[i].focus();
+                    }
+
+                }
+            }
+
+            let cgpa = (totalPoints / totalCreditHours).toFixed(1);
+
+            let label;
+            if (cgpa <= 4.0) {
+                label = `<span class="perfect" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Outstanding — perfect score!</span>`;
+
+            }
+            if (cgpa >= 3.5 && cgpa <= 3.9) { label = `<span class="excellent" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Excellent work — keep it up!</span>`; }
+            if (cgpa >= 3.0 && cgpa <= 3.4) { label = `<span class="good" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Good performance — you are doing well.</span>`; }
+            if (cgpa >= 2.5 && cgpa <= 2.9) { label = `<span class="average" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Average — there is room to improve.</span>`; }
+            if (cgpa >= 2.0 && cgpa <= 2.4) { label = `<span class="below" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Below average — consider focusing study strategies.</span>`; }
+            if (cgpa < 2.0) { label = `<span class="poor" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Poor — reach out for help and make a plan to improve.</span>`; }
+
+            let show_result = document.getElementById("result_output");
+            show_result.innerHTML = `<p style="display: flex; flex-direction: column; gap: 5px;"><b>Your</b> <strong style="font-size: 25px; font-weight: 700;">GPA is ${cgpa}</strong> <b style="text-align: end;"></b>${label}</p> `
+        }
+
+
+        function Convert_Grade() {
+            let inputType = document.getElementById("input_types").value;
+
+            let data;
+
+            if (inputType === "letter") {
+
+                for (i in grade_scale) {
+                    if (document.getElementById("cg_letter").value === grade_scale[i].letter) {
+                        data = grade_scale[i];
+                    }
+                }
+            }
+            else if (inputType === "percent") {
+                for (i in grade_scale) {
+                    if (parseFloat(document.getElementById("cg_percent").value) >= grade_scale[i].min && parseFloat(document.getElementById("cg_percent").value) <= grade_scale[i].max) {
+                        data = grade_scale[i];
+                    }
+                }
+            }
+            else {
+                let userPoint = document.getElementById("cg_point").value;
+                let exactMatch = grade_scale.find(g => g.point === userPoint);
+                if (exactMatch) data = exactMatch;
+
+                let nearest = grade_scale.reduce((prev, curr) => {
+                    return Math.abs(curr.point - userPoint) < Math.abs(prev.point - userPoint)
+                        ? curr
+                        : prev;
+                });
+                data = nearest;
+            }
+
+
+            let label;
+            if (data.point <= 4.0) {
+                label = `<span class="perfect" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Outstanding — perfect score!</span>`;
+
+            }
+            if (data.point >= 3.5 && data.point <= 3.9) { label = `<span class="excellent" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Excellent work — keep it up!</span>`; }
+            if (data.point >= 3.0 && data.point <= 3.4) { label = `<span class="good" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Good performance — you are doing well.</span>`; }
+            if (data.point >= 2.5 && data.point <= 2.9) { label = `<span class="average" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Average — there is room to improve.</span>`; }
+            if (data.point >= 2.0 && data.point <= 2.4) { label = `<span class="below" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Below average — consider focusing study strategies.</span>`; }
+            if (data.point < 2.0) { label = `<span class="poor" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Poor — reach out for help and make a plan to improve.</span>`; }
+
+            let show_result = document.getElementById("result_output");
+            show_result.innerHTML = `<p style="display: flex; flex-direction: column; gap: 5px;"><b>Your</b> <strong style="font-size: 25px; font-weight: 700;">GPA is ${data.point}</strong><span>Your Grade =<b> ${data.letter} </b> | Percentage <b>${data.min}% </b> to <b>${data.max}% </b></span> ${label}</p> `
+
+        }
+
+    </script>
+</body>
+
+</html>
