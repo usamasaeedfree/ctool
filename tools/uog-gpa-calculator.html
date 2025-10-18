@@ -7,293 +7,305 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="revisit-after" content="7 day">
     <meta name="language" content="en">
-    <meta name="author" content="USAMA">
-    <meta name="publisher" content="C Tool">
+    <meta name="author" content="usama s - ctool">
+    <meta name="publisher" content="usama s - ctool">
     <meta name="googlebot" content="translate">
     <meta name="rating" content="general">
     <meta property="og:type" content="website">
     <meta name="twitter:creator" content="@mycreatorhandle">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@myawesomewebsite">
-    <meta property="og:site_name" content="C Tool">
+    <meta property="og:site_name" content="ctool">
     <meta property="og:type" content="website">
     <meta name="format-detection" content="telephone=no">
     <meta name="google-adsense-account" content="ca-pub-5118554117280809">
     <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
     <link rel="stylesheet" href="/src/style.css">
 
-    <title>UOG GPA Calculator - Instantly Calculate Your GPA and CGPA Online</title>
-    <meta property="og:title" content="UOG GPA Calculator - Instantly Calculate Your GPA and CGPA Online">
-    <meta name="twitter:title" content="UOG GPA Calculator - Instantly Calculate Your GPA and CGPA Online">
-    <meta name="title" content="UOG GPA Calculator - Instantly Calculate Your GPA and CGPA Online">
-
-
+    <title>UOG GPA Calculator Online</title>
+    <meta property="og:title" content="UOG GPA Calculator Online">
+    <meta name="twitter:title" content="UOG GPA Calculator Online">
+    <meta name="title" content="UOG GPA Calculator Online">
 
     <link rel="canonical" href="https://ctool.fun/tools/uog-gpa-calculator.html">
     <meta property="og:url" content="https://ctool.fun/tools/uog-gpa-calculator.html">
     <meta name="twitter:url" content="https://ctool.fun/tools/uog-gpa-calculator.html">
 
-    <meta name="keywords"
-        content="uog gpa calculator, uog calculator gpa, University of Gujrat gpa and cgpa calculator, gpa calculator online uog, gpa calculator uog online, uog cgpa calculator, uog calculator cgpa, online cgpa calculator uog">
-
     <meta name="description"
-        content="Free UOG GPA Calculator online – Calculate GPA & CGPA instantly based on the official University of Gujrat grading policy. 100% accurate, fast, and secure.">
+        content="Calculate grades for the University of Gujrat with our free online UOG GPA Calculator. This merit calculator also helps you find your percentage and cumulative grade point average easily.">
     <meta property="og:description"
-        content="Free UOG GPA Calculator tool to calculate GPA & CGPA instantly based on the official University of Gujrat grading system. Fast, accurate & easy to use.">
+        content="Calculate grades for the University of Gujrat with our free online UOG GPA Calculator. This merit calculator also helps you find your percentage and cumulative grade point average easily.">
     <meta name="twitter:description"
-        content="Free UOG GPA Calculator tool to calculate GPA & CGPA instantly based on the official University of Gujrat grading system. Fast, accurate & easy to use.">
+        content="Calculate grades for the University of Gujrat with our free online UOG GPA Calculator. This merit calculator also helps you find your percentage and cumulative grade point average easily.">
 
-    <meta property="og:image" content="/src/uog-cgpa-calculator-online.png">
-    <meta name="twitter:image" content="/src/uog-cgpa-calculator-online.png">
+    <meta name="keywords"
+        content="uog gpa calculator, uog gpa chart, uog gpa percentage, UOG marit calculator,uog cgpa calculator, uog percentage calculator, uog gpa cgpa calculator, uog grade calculator, uog merit calculator, online uog gpa calculator">
 
-    <meta property="og:image" content="/src/uog-gpa-calculator-tool.png">
-    <meta name="twitter:image" content="/src/uog-gpa-calculator-tool.png">
-
-    <meta property="og:image" content="/src/uog-percentage-to-gpa-converter.png">
-    <meta name="twitter:image" content="/src/uog-percentage-to-gpa-converter.png">
-
-    <meta property="og:image" content="/src/calculate-cgpa-gpa-uog-students.png">
-    <meta name="twitter:image" content="/src/calculate-cgpa-gpa-uog-students.png">
-
-
-
-
-
+    <meta property="og:image" content="/img/gpa_cgpa_and_grade_calculator_for_universities.webp">
+    <meta name="twitter:image" content="/img/gpa_cgpa_and_grade_calculator_for_universities.webp">
 
 
     <style>
-        .apps-list {
-            margin-top: 30px;
+        .calculator {
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            overflow: hidden;
+            gap: 0;
+        }
+
+
+        .tabs {
+            background-color: #F5F5F5;
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
         }
 
-        .apps-list>button:hover,
+        .tabs>button {
+            padding: 15px;
+            color: #5e5d5d;
+            border-radius: 0px;
+        }
+
+        .tabs>button:hover,
         .active {
-            background-color: #01757d;
-            color: white;
+            background-color: white;
+            border-bottom: 2px solid #01757D;
+            color: #01757D;
         }
 
-        .apps-container {
-            margin-top: 30px;
+        button {
+            font-weight: 500;
+            transition: 0.2s ease-in-out;
+            background-color: transparent;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 1px 1px 5px gray;
+        }
+
+        .extra,
+        .tool,
+        .result {
+            padding: 10px 30px;
+        }
+
+        .extra {
             display: flex;
-            gap: 30px;
-            align-items: flex-start;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            border-bottom: 1px solid #d1d5db;
         }
 
-        .app-input,
-        .app-output,
-        .app-usage {
-            padding: 30px;
-            border-radius: 10px;
-            background-color: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            flex-grow: 1;
-        }
-
-        .app {
-            width: min(700px, 100%);
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .app-usage {
-            width: min(350px, 100%);
-        }
-
-        hr {
-            border-top: 1px solid gainsboro;
-        }
-
-        .input-fld {
+        .fld {
             display: flex;
             flex-wrap: wrap;
             gap: 5px;
+            align-items: center;
+        }
+
+        .fld>button {
+            background-color: red;
+            color: white;
         }
 
         input,
         select {
-            border: 1px solid gainsboro;
-            padding: 5px 15px;
+            padding: 8px;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            font-weight: 500;
             flex-grow: 1;
-            border-radius: 4px;
+            cursor: pointer;
         }
 
-        .input-container {
-            margin: 30px 0px;
+        .extra>input,
+        select {
+            flex-grow: 0;
+        }
+
+        .tool>h2 {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 30px 0px;
+        }
+
+        .tool>h2>button {
+            color: white;
+            background-color: rgb(6, 165, 1);
+        }
+
+        .inputs-container {
             gap: 30px;
         }
 
         .btn-section {
             margin-top: 20px;
+        }
+
+        .btn-section>button {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        .result>h3 {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 10px;
         }
 
-        .result-container {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
+        .result>h3>img {
+            width: 30px;
         }
 
-        .card {
-            max-width: 100px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-            text-align: center;
-        }
+        .result_output {
 
-        .progress-bar {
-            position: relative;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .progress-bar::before {
-            content: "";
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            background-color: rgb(250, 250, 250);
-            border-radius: 50%;
-        }
-
-        .card-container {
-            margin-top: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-
-        .card-tool {
-            width: min(300px, 100%);
-            background-color: #f5f5f5;
-            padding: 30px;
+            padding: 50px;
+            background-color: #F5F5F5;
             border-radius: 10px;
-            flex-grow: 1;
         }
 
-        .progress-value {
-            position: relative;
-            font-weight: 700;
-            font-size: 18px;
+        .perfect {
+            background: linear-gradient(90deg, #0ea5e9, #3b82f6);
         }
 
-        @media(max-width:768px) {
-            .apps-container {
-                flex-direction: column;
-            }
+        .excellent {
+            background: linear-gradient(90deg, #06b6d4, #0891b2);
+        }
 
-            .app-usage {
-                width: 100%;
-            }
+        .good {
+            background: linear-gradient(90deg, #10b981, #059669);
+        }
+
+        .average {
+            background: linear-gradient(90deg, #f59e0b, #f97316);
+        }
+
+        .below {
+            background: linear-gradient(90deg, #f97316, #ef4444);
+        }
+
+        .poor {
+            background: linear-gradient(90deg, #ef4444, #dc2626);
         }
     </style>
 
 
-    <!-- Website & Organization Schema -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Person",
+            "name":"Usama",
+            "url":"https://ctool.fun/about.html",
+            "jobTitle":"Founder, ctool",
+            "description":"Usama builds tools for student to help in calculating GPA cgpa as well as convert gpa into percentage and grades.",
+            "sameAs":[ "https://twitter.com/ctool", "https://www.linkedin.com/in/usama" ]
+        }
+    </script>
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "C Tool",
-            "url": "https://ctool.fun",
-            "logo": "https://ctool.fun/src/c-tool-website-logo.png",
+            "name": "ctool",
+            "url": "https://ctool.fun/",
+            "logo": "/src/ctool.png",
             "sameAs": [
-                "https://www.facebook.com/ctool",
+                "https://twitter.com/ctool",
                 "https://www.linkedin.com/company/ctool"
-            ]
+            ],
+            "founder": {
+                "@type": "Person",
+                "name": "Usama"
+            }
         }
     </script>
 
-    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"ctool",
+            "url":"https://ctool.fun/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://ctool.fun/search?q={search_term_string}",
+                "query-input":"required name=search_term_string"
+            }
+        }
+    </script>
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
                 {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://ctool.fun/"
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ctool.fun/"
                 },
                 {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Tools",
-                    "item": "https://ctool.fun/tools/"
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tools",
+                "item": "https://ctool.fun/tools/"
                 },
                 {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "UAF Calculator",
-                    "item": "https://ctool.fun/tools/uog-gpa-calculator.html"
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Online GPA Calculator of UOG",
+                "item": "https://ctool.fun/tools/uog-gpa-calculator.html"
                 }
             ]
         }
     </script>
 
-    <!-- SoftwareApplication Schema -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "UOG GPA Calculator - Instantly Calculate Your GPA and CGPA Online",
-            "url": "https://ctool.fun/tools/uog-gpa-calculator.html",
-            "applicationCategory": "EduApplication",
-            "operatingSystem": "All",
-            "description": " Free UOG GPA Calculator tool to calculate GPA & CGPA instantly based on the official University of Gujrat grading system. Fast, accurate & easy to use.",
-            "offers": {
-                "@type": "Offer",
-                "price": "0.00",
-                "priceCurrency": "USD"
-            },
-            "creator": {
-                "@type": "Person",
-                "name": "Usama Saeed"
-            },
-            "browserRequirements": "Requires JavaScript and a modern web browser",
-            "screenshot": [
-                "/img/uog-cgpa-calculator-online.png",
-                "/img/uog-gpa-calculator-tool.png",
-                "/img/uog-percentage-to-gpa-converter.png",
-                "/img/calculate-cgpa-gpa-uog-students.webp"
-                ],
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5",
-                "reviewCount": "180"
-            }
-        }
 
-
-        
-    </script>
-
-    <!-- FAQ Schema Schema -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [
+                {
+                "@type": "Question",
+                "name": "Can I calculate my UOG GPA percentage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, of course! You can calculate your UOG GPA percentage using our merit calculator tool. Simply enter your GPA, and it will automatically convert it into a percentage."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Is this a free UOG percentage calculator?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, it’s completely free to use."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Is the UOG GPA Calculator 2025 updated with the latest University of Gujrat grading scale?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our UOG GPA Calculator is updated for 2025 with the latest University of Gujrat grading scale."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "What is the GPA grading scale used by UOG?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "UOG uses a 4.0 grading scale system to calculate students’ Grade Point Average (GPA) and Cumulative Grade Point Average (CGPA)."
+                }
+                },
                 {
                 "@type": "Question",
                 "name": "What is the passing GPA in UOG?",
@@ -307,7 +319,7 @@
                 "name": "How can I improve my GPA at UOG?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You can improve your GPA by retaking failed subjects, scoring higher in credit-heavy courses, and staying consistent across all semesters."
+                    "text": "You can improve your GPA by retaking failed subjects, scoring higher in credit-hour courses, and maintaining consistent performance across all semesters."
                 }
                 },
                 {
@@ -323,7 +335,7 @@
                 "name": "What CGPA is required for degree completion at UOG?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "For most programs, UOG requires a minimum 2.00 CGPA to qualify for graduation. Some departments may require higher."
+                    "text": "For most programs, UOG requires a minimum CGPA of 2.00 to qualify for graduation. Some departments may require a higher CGPA."
                 }
                 },
                 {
@@ -339,7 +351,7 @@
                 "name": "How do I calculate UOG GPA manually?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Multiply grade points by credit hours, add them up, and divide by total credit hours. The calculator automates this process instantly."
+                    "text": "Multiply each course’s grade points by its credit hours, add them all together, and divide by the total credit hours. Our calculator automates this process instantly."
                 }
                 }
             ]
@@ -348,7 +360,33 @@
 
 
 
-    
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"SoftwareApplication",
+            "name":"GPA Calculator For University Of Gujrat",
+            "description":"Find percentage and calculate grades with our free online UOG GPA Calculator accurately and instantly.",
+            "url":"https://ctool.fun/tools/uog-gpa-calculator.html",
+            "image":"/img/gpa_cgpa_and_grade_calculator_for_universities.webp",
+            "applicationCategory":"Education",
+            "operatingSystem":"Web",
+            "author": { "@type":"Person", "name":"Usama" },
+            "offers": {
+                "@type":"Offer",
+                "price":"0",
+                "priceCurrency":"USD",
+                "availability":"https://schema.org/InStock"
+            },
+            "aggregateRating": {
+                "@type":"AggregateRating",
+                "ratingValue":"4.8",
+                "ratingCount":"120"
+            }
+        }
+    </script>
+
+
+
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
@@ -358,644 +396,310 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-W398SQXZ');</script>
 
-
-
 </head>
 
 <body>
-
-
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W398SQXZ" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
 
 
-
     <header>
         <div class="header">
-            <a href="/" class="logo"> <img src="/src/c-tool-website-logo.png" alt="Logo Of C tool Website" width="100"
-                    height="100"> <strong>C TOOL</strong></a>
-            <nav class="nav" id="navLink">
-                <img src="/src/close-icon.svg" alt="close menu icon" width="60" height="60" onclick='showMenu()'>
+            <a href="/" class="logo"><img src="/src/ctool.png" alt="calculate gpa cgap tools logo" width="100"
+                    height="100"><strong>CTOOL</strong></a>
+            <nav id="navLinks">
+                <img src="/src/close-icon.svg" alt="close navigation bar" width="10" height="10" onclick="navBar()">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/tools/tools.html">Tools</a>
-                <a href="/posts/articles.html">Blogs</a>
+                <a href="/posts/articles.html">Guide</a>
                 <a href="/contact.html">Contact</a>
             </nav>
-            <img src="/src/menu-icon.svg" alt="open menu icon" width="60" height="60" onclick='showMenu()'>
+            <img src="/src/menu-icon.svg" alt="close navigation bar" width="10" height="10" onclick="navBar()">
         </div>
     </header>
 
-    <main class="clm">
+    <main>
+        <section>
+            <div class="clm">
+                <h1>University Of Gujrat GPA Calculator - UOG</h1>
+                <p>Just put in the subject values and start calculating your percentage and grade point average with our
+                    free online UOG GPA Calculator. It's free and works with the official UOG Grade Scale of the
+                    University of Gujrat.</p>
+            </div>
 
-        <!-- Main Heading -->
-        <h1 class="clr">UOG GPA Calculator - Instantly Calculate Your GPA and CGPA Online</h1>
+            <div class="calculator clm">
+                <div class="tabs">
+                    <button onclick="openTool('GPA_Calculator', this)" class="tab active">GPA Calculator</button>
+                    <button onclick="openTool('CGPA_Calculator', this)" class="tab">CGPA Calculator</button>
+                    <button onclick="openTool('Grade_Converter', this)" class="tab">Grade Converter</button>
+                </div>
+                <div class="extra">
+                    <input type="checkbox" name="is gpa weighted or not" id="check" onclick="check_box()">
+                    <label for="check">Weighted GPA</label>
+                    <select id="input_types" onchange="Enable_Input_Type()">
+                        <option value="letter">Letter Grade</option>
+                        <option value="point">Grade Point</option>
+                        <option value="percent">Percentage</option>
+                    </select>
+                </div>
 
-        <p>Instantly calculate your GPA and CGPA with our free UOG GPA Calculator, designed according to the official
-            University of Gujrat grading policy. <a href="#app"> <strong class="clr">Start your calculation
-                    now!</strong> </a>
-        </p>
+                <div class="tool clm" id="GPA_Calculator">
+                    <h2>Calculate Grade Point Average (GPA) <button onclick="Add_Subject()">+Add Subject</button></h2>
+                    <div class="inputs-container clm" id="input-container">
 
-
-
-        <div class="author">
-            <time datetime="2025-08-28"><span>Developed by:</span><strong class="clr"> USAMA S. </strong>
-                <span>Date: </span> <strong class="clr">28 / 08 / 2025</strong></time>
-        </div>
-
-
-
-        <div class="apps-list" id="app">
-            <button class="btn active" onclick="openTool('CGPACalculator', this)">CGPA Calculator</button>
-            <button class="btn" onclick="openTool('GPACalculator', this)">GPA Calculator</button>
-            <button class="btn" onclick="openTool('PercentageGradeConverter', this)">CGPA to percentage</button>
-
-        </div>
-
-
-
-        <div class="apps-container">
-            <div class="app">
-
-                <!-- Tool 1 -->
-<div class="app-input" id="CGPACalculator-input">
-    <h2 class="clr">UOG CGPA Calculator – Calculate Your Cumulative GPA Instantly</h2>
-    <hr>
-    <div class="input-container" id="semester">
-
-        <div class="input-fld">
-            <input type="text" title="Enter your semester name (Optional)" placeholder="Semester name e.g. Fall 2024"
-                id="semester_name">
-
-            <input type="number" step="0.1" min="0.00" max="4.0"
-                title="Enter your Semester GPA (e.g. 3.5)" placeholder="Enter GPA (e.g. 3.5)" id="semester_gpa">
-
-            <input type="number" title="Enter total credit hours for this semester"
-                placeholder="Credit Hours (e.g. 15)" id="semester_credit_hours">
-
-            <button style="background-color: #DC3545; color: white;" onclick="RemoveSubject(this)">Remove Semester</button>
-        </div>
-
-    </div>
-    <hr>
-    <div class="btn-section">
-        <button style="background-color: blue; color: white;" onclick="AddSemester()">+ Add Another Semester</button>
-        <button style="background-color: #01757d; color: white;" onclick="CalculateCGPA()">Calculate UOG CGPA</button>
-    </div>
-</div>
-
-<!-- Tool 2 -->
-<div class="app-input" id="GPACalculator-input" style="display: none;">
-    <h2 class="clr">UOG GPA Calculator – Check Your Semester GPA</h2>
-    <hr>
-    <div class="input-container" id="subjects">
-
-        <div class="input-fld">
-            <input type="text" title="Enter your subject name (Optional)" placeholder="Subject name e.g. Mathematics"
-                id="subject_name">
-
-            <select title="Select your Grade" id="subject_grade">
-                <option value="A+">A+</option>
-                <option value="A">A</option>
-                <option value="B+">B+</option>
-                <option value="B">B</option>
-                <option value="B-">B-</option>
-                <option value="C+">C+</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="F">F</option>
-                <option value="W">W (Withdraw)</option>
-            </select>
-
-            <input type="number" title="Enter subject credit hours" id="subject_credit_hours"
-                placeholder="Credit Hours (e.g. 3)">
-            
-            <button style="background-color: #DC3545; color: white;" onclick="RemoveSubject(this)">Remove Subject</button>
-        </div>
-
-    </div>
-    <hr>
-    <div class="btn-section">
-        <button style="background-color: rgb(0, 110, 255); color: white;" onclick="AddSubject()">+ Add Another Subject</button>
-        <button style="background-color: #01757d; color: white;" onclick="CalculateGPA()">Calculate UOG GPA</button>
-    </div>
-</div>
-
-<!-- Tool 3 -->
-<div class="app-input" id="PercentageGradeConverter-input" style="display: none;">
-    <h2 class="clr">UOG Grade Converter – Convert CGPA, GPA & Percentage</h2>
-    <hr>
-    <div class="input-container">
-
-        <div class="input-fld">
-            <input type="number" title="Enter your marks in percentage" placeholder="Enter Marks % (e.g. 75)"
-                min="0" max="100" id="marks_percentage">
-            <button style="background-color: #049225; color: white;" onclick="ConvertPercentage()">Convert to GPA/CGPA</button>
-        </div>
-
-        <div class="input-fld">
-            <select title="Select your grade letter" id="grade_letter">
-                <option value="A+">A+</option>
-                <option value="A">A</option>
-                <option value="B+">B+</option>
-                <option value="B">B</option>
-                <option value="B-">B-</option>
-                <option value="C+">C+</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="F">F (Fail)</option>
-                <option value="W">W (Withdraw)</option>
-            </select>
-            <button style="background-color:#6F42C1; color:white;" onclick="ConvertGradeLetter()">Convert Grade Letter</button>
-        </div>
-
-        <div class="input-fld">
-            <input type="number" id="grade_points" title="Enter Grade Points (0.0 - 4.0)"
-                placeholder="Grade Points e.g. 3.3, 4.0" step="0.01" min="0.0" max="4.0">
-            <button style="background-color: #343A40; color: white;" onclick="ConvertGradePoint()">Convert Grade Points</button>
-        </div>
-
-    </div>
-</div>
-
-
-
-                <!-- Tool - OutPut Result Section -->
-                <div class="app-output" id="Results">
-                    <h3 class="clr">Results</h3>
-                    <hr>
-                    <div class="result-container">
-                        <div class="card">
-                            <div class="progress-bar" id="PercentageScore"
-                                style="background: conic-gradient(#0389ff 0deg, rgb(235, 235, 235) 0deg);">
-                                <span class="progress-value" style="color: #0389ff;">--</span>
-                            </div>
-                            <strong>Percentage Score</strong>
+                        <div class="fld">
+                            <input id="subject_name" type="text" title="Enter Subject Name (Optional)"
+                                placeholder="Subj Name">
+                            <input id="subject_hours" type="number" title="Enter Credit Hours"
+                                placeholder="Creidt Hours e.g 5">
+                            <select id="subject_letter" title="Select Grade"></select>
+                            <input id="subject_point" type="number" title="Enter GPA of the Subject"
+                                placeholder="GPA e.g. 3.3" style="display: none;">
+                            <input id="subject_percent" type="number" title="Enter Percentage of Marks"
+                                placeholder="e.g 85%" style="display: none;">
+                            <select id="subject_weight" title="Select Weight"></select>
+                            <button onclick="Removefld(this)">Remove</button>
                         </div>
 
-                        <div class="card">
-                            <div class="progress-bar" id="GradeLetter"
-                                style="background: conic-gradient(#ff0318 0deg, rgb(235, 235, 235) 0deg);">
-                                <span class="progress-value" style="color: #ff0318;">--</span>
-                            </div>
-                            <strong>Your Grade Letter</strong>
-                        </div>
+                    </div>
 
-                        <div class="card">
-                            <div class="progress-bar" id="GPAScore"
-                                style="background: conic-gradient(#ff7301 0deg, rgb(235, 235, 235) 0deg);">
-                                <span class="progress-value" style="color: #ff7301;">--</span>
-                            </div>
-                            <strong>Your GPA Score</strong>
-
-                        </div>
-
-                        <div class="card">
-                            <div class="progress-bar" id="CGPAScore"
-                                style="background: conic-gradient(#019b53 0deg, rgb(235, 235, 235) 0deg);">
-                                <span class="progress-value" style="color: #019b53;">--</span>
-                            </div>
-                            <strong>Cumulative GPA</strong>
-
-                        </div>
+                    <div class="btn-section">
+                        <button onclick="Calculate_GPA()">Calculate GPA</button>
                     </div>
                 </div>
 
-            </div>
 
 
+                <div class="tool clm" id="CGPA_Calculator" style="display: none;">
+                    <h2>Cumulative Grade Point Average (CGPA) <button onclick="Add_Semester()">+Add Semester</button>
+                    </h2>
+                    <div class="inputs-container clm" id="CGPA_input-container">
 
+                        <div class="fld">
 
+                            <input id="semester_name" type="text" title="Enter Subject Name (Optional)"
+                                placeholder="Semester">
+                            <input id="semester_point" type="number" title="Enter GPA" placeholder="GPA e.g. 3.5">
+                            <input id="semester_hour" type="number" title="Enter Credit Hours"
+                                placeholder="Credit Hours e.g. 15">
+                            <button onclick="Removefld(this)">Remove</button>
 
-            <div class="app-usage" id="CGPACalculator-usage">
-                <h2 class="clr">How to Calculate Your CGPA with the UOG CGPA Calculator</h2>
-                <hr>
-                <p>The <strong>UOG CGPA Calculator</strong> makes it fast and simple for University of Gujrat students
-                    to calculate their
-                    <strong>semester-wise GPA</strong> and <strong>cumulative CGPA</strong> online. Just follow these
-                    steps:
-                </p>
-                <ol class="links">
-                    <li><strong>Enter Semester Name (Optional):</strong> Add the semester name to keep records
-                        organized.</li>
-                    <li><strong>Input GPA:</strong> Enter the GPA you achieved for that semester.</li>
-                    <li><strong>Enter Credit Hours:</strong> Type the total credit hours for that semester.</li>
-                    <li><strong>Click “Calculate CGPA”:</strong> Instantly view your cumulative result on the screen.
-                    </li>
-                    <li><strong>Add More Semesters:</strong> Use the “Add Semester” button to calculate across multiple
-                        semesters.</li>
-                    <li><strong>Delete a Semester:</strong> Click the “Delete” button if you need to remove incorrect
-                        entries.</li>
-                </ol>
-            </div>
+                        </div>
 
-            <!-- Tool 2 Usage Info-->
-            <div class="app-usage" id="GPACalculator-usage" style="display: none;">
-                <h2 class="clr">How to Calculate Your GPA with the UOG GPA Calculator</h2>
-                <hr>
-                <p>The <strong>UOG GPA Calculator</strong> is designed to help students calculate their
-                    <strong>subject-wise GPA</strong>
-                    quickly and accurately. Here’s how it works:
-                </p>
-                <ol class="links">
-                    <li><strong>Enter Subject Name (Optional):</strong> Add the subject name for better tracking.</li>
-                    <li><strong>Input GPA:</strong> Type the GPA you earned in that subject.</li>
-                    <li><strong>Enter Credit Hours:</strong> Add the credit hours for the subject.</li>
-                    <li><strong>Click “Calculate GPA”:</strong> Get instant GPA results on your screen.</li>
-                    <li><strong>Add More Subjects:</strong> Click “Add Subject” to calculate GPA across multiple
-                        subjects.</li>
-                    <li><strong>Delete a Subject:</strong> Remove mistakes easily with the “Delete” button.</li>
-                </ol>
-            </div>
+                    </div>
 
-            <!-- Tool 3 Usage Info-->
-            <div class="app-usage" id="PercentageGradeConverter-usage" style="display: none;">
-                <h2 class="clr">How to Convert CGPA into Percentage with the UOG Calculator</h2>
-                <hr>
-                <p>The <strong>UOG CGPA Calculator</strong> is more than just a GPA/CGPA tool. It also helps you
-                    <strong>convert CGPA to percentage</strong>,
-                    <strong>grades to grade points</strong>, and vice versa, based on the official University of Gujrat
-                    grading policy.
-                </p>
-
-                <h3>1. Convert CGPA to Percentage:</h3>
-                <ul>
-                    <li>Enter your CGPA or grade point into the input box.</li>
-                    <li>Click the “Convert to Percentage” button to instantly see your result.</li>
-                </ul>
-
-                <h3>2. Convert Grade Letter:</h3>
-                <ul>
-                    <li>Select your grade (e.g., A, B+, C).</li>
-                    <li>Click the “Convert Grade Letter” button to view its equivalent grade point.</li>
-                </ul>
-
-                <h3>3. Convert Marks into GPA:</h3>
-                <ul>
-                    <li>Enter your percentage marks.</li>
-                    <li>Click the “Convert to GPA” button, and the calculator will show your GPA automatically.</li>
-                </ul>
-            </div>
-
-
-        </div>
-
-
-
-        <br>
-
-        <!-- Why Use -->
-        <h2>Why Use This GPA Calculator Online?</h2>
-        <p>There are many reasons why this GPA calculator is better than others:</p>
-        <ul class="links">
-            <li>We are committed to delivering accurate results in accordance with the updated UOG grading policy.</li>
-            <li>It saves students valuable time compared to manual calculations.</li>
-            <li>It's free and accessible anytime, on any device.</li>
-            <li>It delivers GPA/CGPA results instantly with just one click.</li>
-            <li>Users can access this calculator without needing to log in or sign up.</li>
-            <li>It's completely free for a lifetime — no hidden charges.</li>
-            <li>The user interface is simple, clean, and easy to use — even for beginners.</li>
-            <li>Users can dynamically add or remove subjects or semesters as needed.</li>
-            <li>An all-in-one solution — no need for multiple tools.</li>
-            <li>Unlike other tools, our UOG Calculator GPA follows the official University of Gujrat grading policy to
-                ensure maximum accuracy.</li>
-        </ul>
-
-        <br>
-        <!-- Features -->
-        <h2>What Can This GPA Calculator Do?</h2>
-        <p>We have added multiple features to help users accurately measure their academic performance:</p>
-        <ul class="links">
-            <li>Easily calculate GPA & CGPA for any semester or subject.</li>
-            <li>Convert GPA into a percentage with the highest accuracy.</li>
-            <li>Convert grades, marks, grade points, and letter grades seamlessly in both directions.</li>
-        </ul>
-
-        <br>
-        <!-- Grading System -->
-        <h2>Which Grading System Does This Tool Use?</h2>
-        <p>
-            Our tool uses the updated University of Gujrat grading policy, which makes this calculator more efficient
-            and accurate.
-        </p>
-        <strong>UOG Grading System</strong>
-        <p><em>Equivalence between Letter Grading and Numerical Grading is as follows:</em></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Marks (%)</th>
-                    <th>Letter Grade</th>
-                    <th>Grade Points (GPA)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>85 and above</td>
-                    <td>A+</td>
-                    <td>4.00</td>
-                </tr>
-                <tr>
-                    <td>80 - 84</td>
-                    <td>A</td>
-                    <td>3.70</td>
-                </tr>
-                <tr>
-                    <td>75 - 79</td>
-                    <td>B+</td>
-                    <td>3.40</td>
-                </tr>
-                <tr>
-                    <td>70 - 74</td>
-                    <td>B</td>
-                    <td>3.00</td>
-                </tr>
-                <tr>
-                    <td>65 - 69</td>
-                    <td>B-</td>
-                    <td>2.50</td>
-                </tr>
-                <tr>
-                    <td>60 - 64</td>
-                    <td>C+</td>
-                    <td>2.00</td>
-                </tr>
-                <tr>
-                    <td>55 - 59</td>
-                    <td>C</td>
-                    <td>1.50</td>
-                </tr>
-                <tr>
-                    <td>50 - 54</td>
-                    <td>D</td>
-                    <td>1.00</td>
-                </tr>
-                <tr>
-                    <td>49 and below</td>
-                    <td>F</td>
-                    <td>0.00</td>
-                </tr>
-                <tr>
-                    <td>W</td>
-                    <td>Withdrawal</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <br>
-        <!-- How to Use -->
-        <h2>How to Use This Online CGPA Calculator</h2>
-        <p>
-            Using this online CGPA calculator is effortless thanks to its clean and simple interface. Just follow these
-            steps to calculate GPA, CGPA, or convert GPA into a percentage:
-        </p>
-        <ol class="links">
-            <li>Select the type of calculation you want to perform.</li>
-            <li>Click the <strong>Calculate</strong> button.</li>
-            <li>Your result will appear instantly on the screen.</li>
-        </ol>
-
-        <br>
-        <!-- About -->
-        <h2>About This Tool</h2>
-        <p>This tool is designed specifically for UOG students and professionals. It is:</p>
-        <ul>
-            <li>Developed & maintained by ctool.fun</li>
-            <li>Backed by official UOG grading system</li>
-            <li>Trusted by thousands of UOG students every month.</li>
-            <li>Referenced in academic blogs & student forums</li>
-        </ul>
-
-
-
-
-        <br>
-        <h2 id="benefits-heading">How This Calculator Helps UOG Students</h2>
-        <p>
-            The UOG GPA Calculator is more than just an academic tool — it's built to help students plan their future
-            with confidence. Here's how it supports UOG students in practical ways:
-        </p>
-        <ul class="links">
-            <li><strong>Scholarship Eligibility</strong> - Instantly check if your GPA/CGPA meets the minimum
-                requirement for UOG scholarships or external programs.</li>
-            <li><strong>Semester Planning</strong> - Forecast your GPA for upcoming semesters and set academic goals.
-            </li>
-            <li><strong>Job &amp; Internship Applications</strong> - Many employers in Pakistan and abroad ask for
-                GPA/CGPA on resumes. This tool helps you calculate accurately for professional use.</li>
-            <li><strong>Exchange Programs</strong> - Universities abroad often require GPA in a specific format. With
-                this calculator, you can calculate and convert your CGPA instantly.</li>
-        </ul>
-        <p>
-            Whether it's for <em>scholarship eligibility</em>, <em>degree completion</em>, or <em>career planning</em>,
-            this calculator ensures that UOG students get fast, free, and accurate results.
-        </p>
-
-
-
-        <br>
-        <h2 id="example-heading">Step-by-Step Example with Real Data</h2>
-        <p>Here's a quick <strong>UOG GPA calculation example</strong> for better understanding:</p>
-
-        <h3>Subjects &amp; Grades</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Subject</th>
-                    <th scope="col">Credit Hours</th>
-                    <th scope="col">Grade</th>
-                    <th scope="col">Grade Points</th>
-                    <th scope="col">Weighted Points</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>English Composition</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td>3.70</td>
-                    <td>11.1</td>
-                </tr>
-                <tr>
-                    <td>Computer Science I</td>
-                    <td>4</td>
-                    <td>B+</td>
-                    <td>3.40</td>
-                    <td>13.6</td>
-                </tr>
-                <tr>
-                    <td>Statistics</td>
-                    <td>3</td>
-                    <td>B</td>
-                    <td>3.00</td>
-                    <td>9.0</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th scope="row">Totals</th>
-                    <td>10</td>
-                    <td>—</td>
-                    <td>—</td>
-                    <td>33.7</td>
-                </tr>
-            </tfoot>
-        </table>
-
-        <ol class="links">
-            <li><strong>Step 1:</strong> Multiply <em>Credit Hours x Grade Points</em> = Weighted Points.</li>
-            <li><strong>Step 2:</strong> Add all Weighted Points = <strong>33.7</strong>.</li>
-            <li><strong>Step 3:</strong> Divide by Total Credit Hours (<strong>10</strong>).</li>
-        </ol>
-
-        <p><strong>GPA = 3.37</strong></p>
-        <p>If you add multiple semesters, the tool automatically calculates your <strong>CGPA</strong> across all
-            courses.</p>
-
-
-
-
-
-        <br>
-        <h2 id="faqs-heading">Frequently Asked Questions (FAQs)</h2>
-
-        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
-            <summary><strong>Q1: What is the passing GPA in UOG?</strong></summary>
-            <p>At UOG, the minimum passing GPA is <strong>2.00 (C grade)</strong>, but students must also meet
-                departmental requirements for specific programs.</p>
-        </details>
-
-        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
-            <summary><strong>Q2: How can I improve my GPA at UOG?</strong></summary>
-            <p>You can improve your GPA by retaking failed subjects, scoring higher in credit-heavy courses, and staying
-                consistent across all semesters.</p>
-        </details>
-
-        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
-            <summary><strong>Q3: Does UOG round off GPA?</strong></summary>
-            <p>Yes, UOG rounds GPA to <strong>two decimal places</strong> for transcripts and official records.</p>
-        </details>
-
-        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
-            <summary><strong>Q4: What CGPA is required for degree completion at UOG?</strong></summary>
-            <p>For most programs, UOG requires a <strong>minimum 2.00 CGPA</strong> to qualify for graduation. Some
-                departments may require higher.</p>
-        </details>
-
-        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
-            <summary><strong>Q5: Is this GPA calculator official?</strong></summary>
-            <p>This tool follows the <strong>official UOG grading policy</strong> but is developed by
-                <strong>ctool.fun</strong> as a free academic resource. It is not an official UOG website.
-            </p>
-        </details>
-
-        <details class="links" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
-            <summary><strong>Q6: How do I calculate UOG GPA manually?</strong></summary>
-            <p>Multiply grade points by credit hours, add them up, and divide by total credit hours. Our calculator
-                automates this process instantly.</p>
-        </details>
-
-
-
-
-        <br>
-
-        <h3>Sources &amp; References</h3>
-        <ul>
-            <li>
-                <a href="http://uog.edu.pk/downloads/Semester_System_Rules_Notifications.pdf" rel="nofollow noopener"
-                    target="_blank" aria-label="University of Gujrat Official Grading Policy PDF" class="clr">
-                    University of Gujrat Official Grading Policy (PDF)
-                </a>
-            </li>
-            <li>Academic guidelines verified from UOG's official portal.</li>
-        </ul>
-
-        <br>
-        <h3>👨‍🎓 Author &amp; Reviewer</h3>
-        <p>
-            This tool and content are developed by <strong>Usama S.</strong> and reviewed by academic experts, ensuring
-            accuracy according to UOG’s grading policy.
-        </p>
-
-
-
-        <br>
-        <h2 id="testimonials-heading">Student Testimonials / Reviews</h2>
-
-        <div class="card-container">
-
-            <div class="clm card-tool">
-                <cite class="logo" style="color: rgb(4, 134, 220);"> <img src="/src/user-graduate-icon.svg"
-                        alt="User Image" width="150" height="150" style="width: 50px;">Hassan, BS Computer
-                    Science</cite>
-                <blockquote>“This UOG GPA Calculator saved me hours of manual work. I used it to check my scholarship
-                    eligibility.”</blockquote>
-            </div>
-
-            <div class="clm card-tool">
-                <cite class="logo" style="color: rgb(4, 134, 220);"> <img src="/src/user-graduate-icon.svg"
-                        alt="User Image" width="150" height="150" style="width: 50px;">Ayesha, MBA Student</cite>
-
-                <blockquote>“Very accurate and simple to use. Helped me calculate my final CGPA before applying for
-                    jobs.”</blockquote>
-            </div>
-
-            <div class="clm card-tool">
-                <cite class="logo" style="color: rgb(4, 134, 220);"> <img src="/src/user-graduate-icon.svg"
-                        alt="User Image" width="150" height="150" style="width: 50px;">Bilal, BBA Student</cite>
-
-                <blockquote>“The best UOG GPA tool I’ve found online. Quick, reliable, and totally free.”</blockquote>
-            </div>
-        </div>
-
-
-
-
-        <br>
-        <h2>Our More Tools </h2>
-        <div class="card-container">
-
-            <div class="clm card-tool">
-                <h3 class="clr">UAF GPA And CGPA Calculator - Updated for 2025</h3>
-                <p>Check GPA, CGPA, and grades in seconds using UAF calculation rules.</p>
-                <div class="tags">
-                    <span>UAF Calculator</span>
-                    <span>UAF GPA Calculator</span>
-                    <span>UAF GPA & CGPA Online</span>
-                    <span>UAF Live Result Calculator</span>
+                    <div class="btn-section">
+                        <button onclick="Calculate_CGPA()">Calculate CGPA</button>
+                    </div>
                 </div>
-                <a href="/tools/uaf-calculator.html" class="btn"
-                    style="background-color: #01757d; color: white; width: fit-content;">Open
-                    UAF Calculator Tool</a>
+
+
+
+                <div class="tool clm" id="Grade_Converter" style="display: none;">
+                    <h2>Convert Your Grads</h2>
+                    <div class="inputs-container clm">
+
+                        <div class="fld">
+
+                            <select id="cg_letter" title="Select Grade" style="flex-grow: 1;"></select>
+                            <input id="cg_point" type="number" title="Enter GPA of the Subject"
+                                placeholder="GPA e.g. 3.3" style="display: none;">
+                            <input id="cg_percent" type="number" title="Enter Percentage of Marks" placeholder="e.g 85%"
+                                style="display: none;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="btn-section">
+                        <button onclick="Convert_Grade()">Convert Grades</button>
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+                <div class="result clm">
+                    <hr>
+                    <h3><img src="/src/cumulative_gpa_progress_report.svg"
+                            alt="user cumulative gpa cumulative gpa progress report result" width="10" height="10">
+                        Your Result</h3>
+                    <div class="result_output clm" id="result_output">
+                        <p style="display: flex; flex-direction: column; gap: 5px;"><b>Your</b> <strong
+                                style="font-size: 25px; font-weight: 700;">Score is 0.0</strong>
+
+                            <span
+                                style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content; background: linear-gradient(90deg, #0ea5e9, #3b82f6);">Please
+                                enter your grades to instantly calculate your result!</span>
+                        </p>
+
+                    </div>
+                </div>
             </div>
 
 
-        </div>
-        <a href="/tools/tools.html" class="btn"
-            style="background-color: #01757d; color: white; width: fit-content; margin-top: 50px;">View All Tools</a>
+
+            <div class="clm">
+                <h2>UOG GPA Chart</h2>
+                <p>This is the UOG GPA Chart used at the University of Gujrat for percentage and GPA calculation. Using
+                    this grading scale, you can also calculate your cumulative grade point average for subjects and
+                    semesters easily and convert them into percentage. Our free online calculator also uses this grading
+                    scale to ensure accurate results.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Grade</th>
+                            <th>Percentage Range</th>
+                            <th>Grade Point</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A+</td>
+                            <td>85 - 100%</td>
+                            <td>4.00</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>80 - 84%</td>
+                            <td>3.70</td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td>75 - 79%</td>
+                            <td>3.40</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>70 - 74%</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>B-</td>
+                            <td>65 - 69%</td>
+                            <td>2.50</td>
+                        </tr>
+                        <tr>
+                            <td>C+</td>
+                            <td>60 - 64%</td>
+                            <td>2.00</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>55 - 59%</td>
+                            <td>1.50</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>50 - 54%</td>
+                            <td>1.00</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>0 - 49%</td>
+                            <td>0.00</td>
+                        </tr>
+                        <tr>
+                            <td>W</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
 
 
+            <div class="clm">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq">
+                    <h3>Can I calculate my UOG GPA percentage?</h3>
+                    <p>Yes, of course! You can calculate your UOG GPA percentage using our merit calculator tool. Simply
+                        enter your GPA, and it will automatically convert it into a percentage.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Is this a free UOG percentage calculator?</h3>
+                    <p>Yes, it’s completely free to use.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Is the UOG GPA Calculator 2025 updated with the latest University of Gujrat grading scale?</h3>
+                    <p>Yes, our UOG GPA Calculator is updated for 2025 with the latest University of Gujrat grading
+                        scale.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>What is the GPA grading scale used by UOG?</h3>
+                    <p>UOG uses a 4.0 grading scale system to calculate students’ Grade Point Average (GPA) and
+                        Cumulative Grade Point Average (CGPA).</p>
+                </div>
+
+                <div class="faq">
+                    <h3>What is the passing GPA in UOG?</h3>
+                    <p>At UOG, the minimum passing GPA is 2.00 (C grade), but students must also meet departmental
+                        requirements for specific programs.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>How can I improve my GPA at UOG?</h3>
+                    <p>You can improve your GPA by retaking failed subjects, scoring higher in credit-hour courses, and
+                        maintaining consistent performance across all semesters.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Does UOG round off GPA?</h3>
+                    <p>Yes, UOG rounds GPA to two decimal places for transcripts and official records.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>What CGPA is required for degree completion at UOG?</h3>
+                    <p>For most programs, UOG requires a minimum CGPA of 2.00 to qualify for graduation. Some
+                        departments may require a higher CGPA.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Is this GPA calculator official?</h3>
+                    <p>This tool follows the official UOG grading policy but is developed by ctool.fun as a free
+                        academic resource. It is not an official UOG website.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>How do I calculate UOG GPA manually?</h3>
+                    <p>Multiply each course’s grade points by its credit hours, add them all together, and divide by the
+                        total credit hours. Our calculator automates this process instantly.</p>
+                </div>
+
+
+
+
+            </div>
+        </section>
     </main>
+
 
 
     <footer>
         <div class="grid">
             <div class="clm">
-                <h3>CTOOL.FUN</h3>
-                <p>Build smarter with our fast, accurate, free online tools in 2025 live</p>
+                <strong>CTOOL</strong>
+                <p>Simple tool to calculate cumulative grade point average (GPA) and Tracks academic performance.</p>
             </div>
 
             <div class="clm">
-                <h3>Resources</h3>
+                <strong>Legal Pages</strong>
                 <div class="links">
-                    <a href="/posts/articles.html">Blogs</a>
-                    <a href="/tools/tools.html">Tools</a>
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="/disclaimer.html">Disclaimer</a>
                 </div>
             </div>
 
             <div class="clm">
-                <h3>Website Links</h3>
+                <strong>Website Links</strong>
                 <div class="links">
                     <a href="/">Home</a>
                     <a href="/about.html">About</a>
@@ -1004,312 +708,338 @@
             </div>
 
             <div class="clm">
-                <h3>Legal Pages</h3>
+                <strong>Resources</strong>
                 <div class="links">
-                    <a href="/privacy-policy.html">Privacy Policy</a>
-                    <a href="/terms-and-conditions.html">Terms and Conditions</a>
-                    <a href="/disclaimer.html">Disclaimer</a>
+                    <a href="/posts/articles.html">Blogs</a>
+                    <a href="/tools/tools.html">Tools</a>
                 </div>
             </div>
         </div>
-        <p>© 2025 ctool.fun — Fast, Free & Accurate Tools</p>
+        <hr>
+        <p>© 2025 ctool.fun cumulative GPA calculators. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScript Functions Section -->
     <script>
-        function showMenu() {
-            const navLinks = document.getElementById("navLink");
-            navLinks.classList.toggle("show")
-        }
-
-        function openTool(toolId, btn) {
-            document.querySelectorAll(".app-input").forEach(t => t.style.display = "none");
-            document.querySelectorAll(".app-usage").forEach(u => u.style.display = "none");
-
-            document.getElementById(toolId + "-input").style.display = "flex";
-            document.getElementById(toolId + "-usage").style.display = "flex";
-
-            document.querySelectorAll(".btn").forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-        }
-
-        function Progress_Result_Show(percent, letter, gpa, cgpa) {
-            let Percentage_Score = document.getElementById("PercentageScore");
-            let Grade_Letter = document.getElementById("GradeLetter");
-            let GPA_Score = document.getElementById("GPAScore");
-            let CGPA_Score = document.getElementById("CGPAScore");
-
-
-            let number = 0;
-            const Progress_animation = setInterval(() => {
-                const deg = (number / 100) * 360;
-                Percentage_Score.style.background = `conic-gradient(rgb(3 137 255) 0deg ${deg}deg, #e2e2e2 ${deg}deg 360deg)`;
-                Grade_Letter.style.background = `conic-gradient(rgb(255, 3, 24) 0deg ${deg}deg, #e2e2e2 ${deg}deg 360deg)`;
-                GPA_Score.style.background = `conic-gradient(rgb(255, 115, 1) 0deg ${deg}deg, #e2e2e2 ${deg}deg 360deg)`;
-                CGPA_Score.style.background = `conic-gradient(rgb(1, 155, 83) 0deg ${deg}deg, #e2e2e2 ${deg}deg 360deg)`;
-
-
-                Percentage_Score.innerHTML = `<span class="progress-value" style="color: rgb(3 137 255);">${percent}%</span>`;
-                Grade_Letter.innerHTML = `<span class="progress-value" style="color: rgb(255, 3, 24);">${letter}</span>`;
-                GPA_Score.innerHTML = `<span class="progress-value" style="color: rgb(255, 115, 1);">${gpa}</span>`;
-                CGPA_Score.innerHTML = `<span class="progress-value" style="color: rgb(1, 155, 83);">${cgpa}</span>`;
-
-                number++
-
-                if (number > percent) {
-                    clearInterval(Progress_animation);
-                }
-
-            }, 10);
-
-            document.getElementById("Results").scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-
+        function navBar() {
+            let nav_Bar = document.getElementById("navLinks");
+            nav_Bar.classList.toggle("show");
         }
 
         const grade_scale = [
             { min: 85, max: 100, letter: "A+", point: 4.00 },
-            { min: 80, max: 84, letter: "A", point: 3.70 },
-            { min: 75, max: 79, letter: "B+", point: 3.40 },
-            { min: 70, max: 74, letter: "B", point: 3.00 },
-            { min: 65, max: 69, letter: "B-", point: 2.50 },
-            { min: 60, max: 64, letter: "C+", point: 2.00 },
-            { min: 55, max: 59, letter: "C", point: 1.50 },
-            { min: 50, max: 54, letter: "D", point: 1.00 },
-            { min: 0, max: 49, letter: "F", point: 0.00 },
-            { min: null, max: null, letter: "W", point: null } // Withdrawal case
+            { min: 80, max: 84.99, letter: "A", point: 3.70 },
+            { min: 75, max: 79.99, letter: "B+", point: 3.40 },
+            { min: 70, max: 74.99, letter: "B", point: 3.00 },
+            { min: 65, max: 69.99, letter: "B-", point: 2.50 },
+            { min: 60, max: 64.99, letter: "C+", point: 2.00 },
+            { min: 55, max: 59.99, letter: "C", point: 1.50 },
+            { min: 50, max: 54.99, letter: "D", point: 1.00 },
+            { min: 0, max: 49.99, letter: "F", point: 0.00 }
         ];
 
-        function ConvertPercentage() {
-            let Marks_percentage = document.getElementById("marks_percentage");
+        let weight_options = { "Regular +0.0": 0, "Honors +0.5": 0.5, "AP/IB +1.0": 1, "Dual Enrollment +0.5": 0.5 };
 
-
-            if (!isNaN(Marks_percentage.value) && Marks_percentage.value != "") {
-
-                for (let i = 0; i < grade_scale.length; i++) {
-
-                    if (Marks_percentage.value <= grade_scale[i].max && Marks_percentage.value >= grade_scale[i].min) {
-                        console.log(grade_scale[i]);
-                        Progress_Result_Show(Marks_percentage.value, grade_scale[i].letter, grade_scale[i].point, grade_scale[i].point)
-                    }
-                }
+        function Removefld(button) {
+            button.closest(".fld").remove();
+        }
+        function check_box() {
+            let checkBox = document.getElementById("check");
+            let isChecked = checkBox.checked;
+            if (isChecked == false) {
+                document.querySelectorAll("#subject_weight").forEach(t => t.style.display = "none");
             }
             else {
-                window.alert("Please enter your marks in percentage format (0-100).")
-                Marks_percentage.focus()
+                document.querySelectorAll("#subject_weight").forEach(t => t.style.display = "flex");
             }
         }
 
-        function ConvertGradeLetter() {
-            let Grade_lette = document.getElementById("grade_letter");
+        function Add_Weights_Options() {
+            let Selection = document.getElementById("input-container");
+            for (let item in weight_options) {
+                let option = document.createElement("option");
+                option.innerText = item;
+                option.value = item.value;
+                Selection.lastElementChild.children[5].appendChild(option);
+            };
+        };
 
-            for (let i = 0; i < grade_scale.length; i++) {
-                if (Grade_lette.value == grade_scale[i].letter) {
-                    console.log(grade_scale[i]);
-                    Progress_Result_Show(grade_scale[i].max, grade_scale[i].letter, grade_scale[i].point, grade_scale[i].point)
+
+        function Add_Letters_Options() {
+            let selection = document.getElementById("input-container");
+            for (let item in grade_scale) {
+                let option = document.createElement("option");
+                option.innerText = grade_scale[item].letter;
+                option.value = grade_scale[item].letter;
+                selection.lastElementChild.children[2].appendChild(option);
+            };
+        };
+
+        function Add_Letters_Options_Grade() {
+            let selection = document.getElementById("cg_letter");
+            for (let item in grade_scale) {
+                let option = document.createElement("option");
+                option.innerText = grade_scale[item].letter;
+                option.value = grade_scale[item].letter;
+                selection.appendChild(option);
+            };
+        };
+
+        function Enable_Input_Type() {
+            let inputtype = document.getElementById("input_types");
+            let input_Type = ["letter", "point", "percent"];
+
+            for (let i = 0; i < input_Type.length; i++) {
+                if (inputtype.value != input_Type[i]) {
+                    document.querySelectorAll("#subject_" + input_Type[i]).forEach(t => t.style.display = "none")
+                    document.querySelectorAll("#cg_" + input_Type[i]).forEach(t => t.style.display = "none")
+                }
+                else {
+                    document.querySelectorAll("#subject_" + input_Type[i]).forEach(t => t.style.display = "flex")
+                    document.querySelectorAll("#cg_" + input_Type[i]).forEach(t => t.style.display = "flex")
                 }
             }
         }
 
-        function ConvertGradePoint() {
-            let Grade_Point = document.getElementById("grade_points");
-            let userPoint = parseFloat(Grade_Point.value);
-
-            if (!isNaN(userPoint) && Grade_Point.value !== "" && userPoint <= 4.0 && userPoint >= 0.0) {
-
-                let result = null;
-
-                for (let i = 0; i < grade_scale.length; i++) {
-                    let current = grade_scale[i];
-                    let next = grade_scale[i - 1];
 
 
-                    if (i === grade_scale.length - 1) {
-                        result = current;
-                        break;
-                    }
+        Add_Weights_Options();
+        Add_Letters_Options();
+        Enable_Input_Type();
+        check_box();
+        Add_Letters_Options_Grade();
 
 
-                    if (userPoint === current.point) {
-                        result = current;
-                        break;
-                    }
-
-
-                    if (userPoint >= current.point && (!next || userPoint < next.point)) {
-                        result = current;
-                        break;
-                    }
-                }
-
-                console.log(result); // yahan ap row ka data use kar saktay ho (UI me show karne ke liye)
-                Progress_Result_Show(result.max, result.letter, Grade_Point.value, Grade_Point.value)
-            }
-            else {
-                window.alert("Please enter a valid grade point (e.g., 3.3 — range: 0.0 to 4.0).");
-                Grade_Point.focus();
-            }
-        }
-
-        function RemoveSubject(button) {
-            button.closest(".input-fld").remove();
-        }
-
-        function AddSubject() {
-            const SubContainer = document.querySelector("#subjects");
+        function Add_Subject() {
+            let inputContainer = document.getElementById("input-container");
             const Subject = document.createElement("div");
-            Subject.className = "input-fld";
-            Subject.innerHTML = `<input type="text" title="Enter Subject Name (Optional)" placeholder="Enter subject name"
-                                id="subject_name">
-                            <select title="Choose Grade" id="subject_grade">
-                                <option value="A+">A+</option>
-                                <option value="A">A</option>
-                                <option value="B+">B+</option>
-                                <option value="B">B</option>
-                                <option value="B-">B-</option>
-                                <option value="C+">C+</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="F">F</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input type="number" title="Enter Credit Hours" id="subject_credit_hours"
-                                placeholder="Enter Grade Points (e.g. 3.3, 4.0)">
-                            <button style="background-color: #DC3545; color: white;" onclick="RemoveSubject(this)">Delete</button>`;
-            SubContainer.appendChild(Subject)
+            Subject.className = "fld";
+            Subject.innerHTML = `<input id="subject_name" type="text" title="Enter Subject Name (Optional)"
+                                placeholder="Subj Name">
+                            <input id="subject_hours" type="number" title="Enter Credit Hours"
+                                placeholder="Creidt Hours e.g 5">
+                            <select id="subject_letter" title="Select Grade"></select>
+                            <input id="subject_point" type="number" title="Enter GPA of the Subject" placeholder="GPA e.g. 3.3"
+                                style="display: none;">
+                            <input id="subject_percent" type="number" title="Enter Percentage of Marks" placeholder="e.g 85%"
+                                style="display: none;">
+                            <select id="subject_weight" title="Select Weight"></select>
+                            <button onclick="Removefld(this)">Remove</button>`;
+            inputContainer.appendChild(Subject);
+            Add_Weights_Options();
+            Add_Letters_Options();
+            Enable_Input_Type();
+            check_box();
         }
 
-        function AddSemester() {
-            const SemContainer = document.querySelector("#semester");
-            const semester = document.createElement("div");
-            semester.className = "input-fld";
-            semester.innerHTML = `<input type="text" title="Enter Semester Name (Optional)" placeholder="Enter semester name"
-                                id="semester_name">
-
-                            <input type="number" step="0.1" title="Semeste GPA" placeholder="Semester GPA (e.g., 3.5)"
-                                id="semester_gpa">
-                            <input type="number" title="Enter Credit Hours" placeholder="Credit Hours  .e.g - 10"
-                                id="semester_credit_hours">
-                            <button style="background-color: #DC3545; color: white;"
-                                onclick="RemoveSubject(this)">Delete</button>`;
-            SemContainer.appendChild(semester)
+        function Add_Semester() {
+            let inputContainer = document.getElementById("CGPA_input-container");
+            const Semester = document.createElement("div");
+            Semester.className = "fld";
+            Semester.innerHTML = `<input id="semester_name" type="text" title="Enter Subject Name (Optional)" placeholder="Semester">
+                            <input id="semester_point" type="number" title="Enter GPA" placeholder="GPA e.g. 3.5">
+                            <input id="semester_hour" type="number" title="Enter Credit Hours" placeholder="Credit Hours e.g. 15">
+                            <button onclick="Removefld(this)">Remove</button>`;
+            inputContainer.appendChild(Semester);
         }
 
-        function CalculateGPA() {
+        function openTool(toolId, btn) {
+            document.querySelectorAll(".tool").forEach(t => t.style.display = "none");
+            document.getElementById(toolId).style.display = "flex";
+            document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+        }
+
+
+
+
+
+
+        function Calculate_CGPA() {
             let totalPoints = 0;
-            let totalCredits = 0;
+            let totalCreditHours = 0;
 
-            let sgrade = document.querySelectorAll("#subject_grade");
-            let chours = document.querySelectorAll("#subject_credit_hours");
+            let semesters = document.querySelectorAll("#semester_point");
+            let chours = document.querySelectorAll("#semester_hour");
 
-            for (let i = 0; i < sgrade.length; i++) {
+            for (let i = 0; i < semesters.length; i++) {
+                if (!isNaN(parseFloat(semesters[i].value))) {
+                    if (!isNaN(parseFloat(chours[i].value))) {
 
-                if (!isNaN(parseFloat(chours[i].value)) && parseFloat(chours[i].value) != "") {
-                    for (let j = 0; j < grade_scale.length; j++) {
-                        if (sgrade[i].value == grade_scale[j].letter) {
+                        totalPoints += parseFloat(semesters[i].value) * parseFloat(chours[i].value);
+                        totalCreditHours += parseFloat(chours[i].value);
 
-                            totalPoints += grade_scale[j].point * parseFloat(chours[i].value);
-                            totalCredits += parseFloat(chours[i].value);
+                    } else {
+                        window.alert("Please enter a valid Credit Hourss (e.g., 15, 18).");
+                        chours[i].focus();
+                    }
+                }
+                else {
+                    window.alert("Please enter a valid Grade Points (e.g., 3.5, 3.7, 4).");
+                    semesters[i].focus();
+                }
+            }
+
+            let cgpa = (totalPoints / totalCreditHours).toFixed(2);
+
+            let label;
+            if (cgpa <= 4.0) { label = `<span class="perfect" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Outstanding — perfect score!</span>`; }
+            if (cgpa >= 3.5 && cgpa <= 3.9) {
+                label = `<span class="excellent" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Excellent work — keep it up!</span>`;
+
+            }
+            if (cgpa >= 3.0 && cgpa <= 3.4) { label = `<span class="good" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Good performance — you are doing well.</span>`; }
+            if (cgpa >= 2.5 && cgpa <= 2.9) { label = `<span class="average" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Average — there is room to improve.</span>`; }
+            if (cgpa >= 2.0 && cgpa <= 2.4) { label = `<span class="below" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Below average — consider focusing study strategies.</span>`; }
+            if (cgpa < 2.0) { label = `<span class="poor" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Poor — reach out for help and make a plan to improve.</span>`; }
+
+            let show_result = document.getElementById("result_output");
+            show_result.innerHTML = `<p style="display: flex; flex-direction: column; gap: 8px;"><b>Your</b> <strong style="font-size: 25px; font-weight: 700;">CGPA is ${cgpa}</strong> ${label}</p>`
+
+        }
+
+
+        function Calculate_GPA() {
+            let totalPoints = 0;
+            let totalCreditHours = 0;
+
+            let inputType = document.getElementById("input_types").value;
+            let ch = document.querySelectorAll("#subject_hours");
+
+
+            if (inputType === "letter") {
+                for (let i = 0; i < ch.length; i++) {
+                    let grade_point = document.querySelectorAll("#subject_letter");
+                    if (!isNaN(parseFloat(ch[i].value))) {
+                        for (let j = 0; j < grade_scale.length; j++) {
+                            if (grade_scale[j].letter === grade_point[i].value) {
+                                totalPoints += parseFloat(ch[i].value) * parseFloat(grade_scale[j].point);
+                                totalCreditHours += parseFloat(ch[i].value)
+                            }
                         }
-
+                    }
+                    else {
+                        window.alert("Please enter a valid Credit Hours (e.g., 1, 2, 3.3).");
+                        ch[i].focus();
                     }
 
                 }
-                else {
-                    window.alert("Please enter a valid credit hour (e.g., 1, 2, 3).");
-                    chours[i].focus()
+
+            } else if (inputType === "subject_percentage") {
+                for (let i = 0; i < ch.length; i++) {
+                    let grade_point = document.querySelectorAll("#subject_percentage");
+                    if (!isNaN(parseFloat(ch[i].value))) {
+                        if (!isNaN(parseFloat(grade_point[i].value))) {
+
+                            for (let grade of grade_scale) {
+                                if (grade_point[i].value >= grade.min && grade_point[i].value <= grade.max) {
+                                    totalPoints += parseFloat(ch[i].value) * parseFloat(grade.point);
+                                    totalCreditHours += parseFloat(ch[i].value)
+                                }
+                            }
+
+                        }
+                        else {
+                            window.alert("Please enter a valid Grade Point (e.g., 1, 2, 3.3).");
+                            grade_point[i].focus();
+                        }
+                    }
+                    else {
+                        window.alert("Please enter a valid Credit Hours (e.g., 1, 2, 3.3).");
+                        ch[i].focus();
+                    }
+
+                }
+            }
+            else {
+                for (let i = 0; i < ch.length; i++) {
+                    let grade_point = document.querySelectorAll("#subject_grade_point");
+                    if (!isNaN(parseFloat(ch[i].value))) {
+                        if (!isNaN(parseFloat(grade_point[i].value))) {
+                            totalPoints += parseFloat(ch[i].value) * parseFloat(grade_point[i].value);
+                            totalCreditHours += parseFloat(ch[i].value)
+                        }
+                        else {
+                            window.alert("Please enter a valid Grade Point (e.g., 1, 2, 3.3).");
+                            grade_point[i].focus();
+                        }
+                    }
+                    else {
+                        window.alert("Please enter a valid Credit Hours (e.g., 1, 2, 3.3).");
+                        ch[i].focus();
+                    }
+
                 }
             }
 
-            let GPA = totalPoints / totalCredits;
+            let cgpa = (totalPoints / totalCreditHours).toFixed(1);
 
+            let label;
+            if (cgpa <= 4.0) {
+                label = `<span class="perfect" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Outstanding — perfect score!</span>`;
 
-            userPoint = GPA.toFixed(2);
-
-            let result = null;
-
-            for (let i = 0; i < grade_scale.length; i++) {
-                let current = grade_scale[i];
-                let next = grade_scale[i - 1];
-
-
-                if (i === grade_scale.length - 1) {
-                    result = current;
-                    break;
-                }
-
-
-                if (userPoint === current.point) {
-                    result = current;
-                    break;
-                }
-
-
-                if (userPoint >= current.point && (!next || userPoint < next.point)) {
-                    result = current;
-                    break;
-                }
             }
-            Progress_Result_Show(result.max, result.letter, userPoint, userPoint)
+            if (cgpa >= 3.5 && cgpa <= 3.9) { label = `<span class="excellent" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Excellent work — keep it up!</span>`; }
+            if (cgpa >= 3.0 && cgpa <= 3.4) { label = `<span class="good" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Good performance — you are doing well.</span>`; }
+            if (cgpa >= 2.5 && cgpa <= 2.9) { label = `<span class="average" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Average — there is room to improve.</span>`; }
+            if (cgpa >= 2.0 && cgpa <= 2.4) { label = `<span class="below" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Below average — consider focusing study strategies.</span>`; }
+            if (cgpa < 2.0) { label = `<span class="poor" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Poor — reach out for help and make a plan to improve.</span>`; }
+
+            let show_result = document.getElementById("result_output");
+            show_result.innerHTML = `<p style="display: flex; flex-direction: column; gap: 5px;"><b>Your</b> <strong style="font-size: 25px; font-weight: 700;">GPA is ${cgpa}</strong> <b style="text-align: end;"></b>${label}</p> `
         }
 
-        function CalculateCGPA() {
-            let totalPoints = 0;
-            let totalCredits = 0;
 
-            let sgrade = document.querySelectorAll("#semester_gpa");
-            let chours = document.querySelectorAll("#semester_credit_hours");
+        function Convert_Grade() {
+            let inputType = document.getElementById("input_types").value;
 
-            for (let i = 0; i < sgrade.length; i++) {
-                if (isNaN(sgrade[i].value) || sgrade[i].value == "") {
-                    window.alert("Please Enter Semester GPA");
-                    sgrade[i].focus()
-                }
+            let data;
 
-                if (isNaN(chours[i].value) || chours[i].value == "") {
-                    window.alert("Please Enter Semester Creit hour");
-                    chours[i].focus()
-                }
+            if (inputType === "letter") {
 
-                else {
-                    totalPoints += parseFloat(sgrade[i].value) * parseFloat(chours[i].value);
-                    totalCredits += parseFloat(chours[i].value);
+                for (i in grade_scale) {
+                    if (document.getElementById("cg_letter").value === grade_scale[i].letter) {
+                        data = grade_scale[i];
+                    }
                 }
             }
-
-            let GPA = totalPoints / totalCredits;
-            userPoint = GPA.toFixed(2);
-
-            let result = null;
-
-            for (let i = 0; i < grade_scale.length; i++) {
-                let current = grade_scale[i];
-                let next = grade_scale[i - 1];
-
-
-                if (i === grade_scale.length - 1) {
-                    result = current;
-                    break;
-                }
-
-
-                if (userPoint === current.point) {
-                    result = current;
-                    break;
-                }
-
-
-                if (userPoint >= current.point && (!next || userPoint < next.point)) {
-                    result = current;
-                    break;
+            else if (inputType === "percent") {
+                for (i in grade_scale) {
+                    if (parseFloat(document.getElementById("cg_percent").value) >= grade_scale[i].min && parseFloat(document.getElementById("cg_percent").value) <= grade_scale[i].max) {
+                        data = grade_scale[i];
+                    }
                 }
             }
-            Progress_Result_Show(result.max, result.letter, userPoint, userPoint)
+            else {
+                let userPoint = document.getElementById("cg_point").value;
+                let exactMatch = grade_scale.find(g => g.point === userPoint);
+                if (exactMatch) data = exactMatch;
+
+                let nearest = grade_scale.reduce((prev, curr) => {
+                    return Math.abs(curr.point - userPoint) < Math.abs(prev.point - userPoint)
+                        ? curr
+                        : prev;
+                });
+                data = nearest;
+            }
+
+
+            let label;
+            if (data.point <= 4.0) {
+                label = `<span class="perfect" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Outstanding — perfect score!</span>`;
+
+            }
+            if (data.point >= 3.5 && data.point <= 3.9) { label = `<span class="excellent" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Excellent work — keep it up!</span>`; }
+            if (data.point >= 3.0 && data.point <= 3.4) { label = `<span class="good" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Good performance — you are doing well.</span>`; }
+            if (data.point >= 2.5 && data.point <= 2.9) { label = `<span class="average" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Average — there is room to improve.</span>`; }
+            if (data.point >= 2.0 && data.point <= 2.4) { label = `<span class="below" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Below average — consider focusing study strategies.</span>`; }
+            if (data.point < 2.0) { label = `<span class="poor" style="color: white; padding: 5px 15px; border-radius: 5px; width: fit-content;">Poor — reach out for help and make a plan to improve.</span>`; }
+
+            let show_result = document.getElementById("result_output");
+            show_result.innerHTML = `<p style="display: flex; flex-direction: column; gap: 5px;"><b>Your</b> <strong style="font-size: 25px; font-weight: 700;">GPA is ${data.point}</strong><span>Your Grade =<b> ${data.letter} </b> | Percentage <b>${data.min}% </b> to <b>${data.max}% </b></span> ${label}</p> `
+
         }
+
     </script>
+
+
 </body>
-
 </html>
-
