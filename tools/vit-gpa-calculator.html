@@ -922,9 +922,9 @@
 
                 }
 
-            } else if (inputType === "subject_percentage") {
+            } else if (inputType === "percent") {
                 for (let i = 0; i < ch.length; i++) {
-                    let grade_point = document.querySelectorAll("#subject_percentage");
+                    let grade_point = document.querySelectorAll("#subject_percent");
                     if (!isNaN(parseFloat(ch[i].value))) {
                         if (!isNaN(parseFloat(grade_point[i].value))) {
 
@@ -950,7 +950,7 @@
             }
             else {
                 for (let i = 0; i < ch.length; i++) {
-                    let grade_point = document.querySelectorAll("#subject_grade_point");
+                    let grade_point = document.querySelectorAll("#subject_point");
                     if (!isNaN(parseFloat(ch[i].value))) {
                         if (!isNaN(parseFloat(grade_point[i].value))) {
                             totalPoints += parseFloat(ch[i].value) * parseFloat(grade_point[i].value);
@@ -1040,3 +1040,4 @@
     </script>
 </body>
 </html>
+
